@@ -352,210 +352,115 @@
                 <div class="container-fluid">
                     <h1 class="h3 mb-3 text-gray-800">Doctors Report</h1>
                     <!-- Page Heading -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Patient information</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    
-                                    
-                                    <tbody>
-                                        <tr>
-                                            <td><b>Name</b></td>
-                                            <td>Irene</td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Gender</b></td>
-                                            <td>Female</td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Age</b></td>
-                                            <td>35</td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Brushing habits</b></td>
-                                            <td>Once daily</td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Tobacco habits</b></td>
-                                            <td>No</td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>What dental problems are you currently facing</b></td>
-                                            <td>None</td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Since how long have you been facing this problem ?</b></td>
-                                            <td>Not facing a problem</td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Rejection count</b></td>
-                                            <td>0</td>
-                                        </tr>
-                                        <tr>
-                                            <td><b>Last reject mark</b></td>
-                                            <td>null</td>
-                                        </tr>
-                                       
-                                        
-                                        
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-6 m-0 p-0">
-                        <div class="card shadow mb-4 bg-white w-100">
-                            <div class="shadow" style="">
+                        <style>
+                            #step1{
+                                display: block;
+                            }
+                            #step2{
+                                display: none;
+                            }
+                            #step3{
+                                display: none;
+                            }
+                            #step4{
+                                display: none;
+                            }
+                            #step5{
+                                display: none;
+                            }
+                            #step6{
+                                display: none;
+                            }
+                            #step7{
+                                display: none;
+                            }
+                        </style>
+                        <style>
+                                        .switch-field {
+                                            display: flex;
+                                            overflow: hidden;
+                                        }
 
-                                <!-- Card Header - Accordion -->
-                                <a href="#collapseCardExample" class="d-block card-header py-3 bg-dark" data-toggle="collapse"
-                                    role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                                    <h6 class="m-0 font-weight-bold text-white">Annotate the images</h6>
-                                </a>
-                                <!-- Card Content - Collapse -->
-                                <div class="collapse show" id="collapseCardExample">
-                                    <div class="card-body bg-white">
-                                        <div class="row">
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="btn btn-primary mx-1" data-toggle="modal" data-target="#exampleModal">
-                                                Upper 
-                                            </button>
-                                            <button type="button" class="btn btn-primary mx-1" data-toggle="modal" data-target="#exampleModal2">
-                                                Lower 
-                                            </button>
-                                            <button type="button" class="btn btn-primary mx-1" data-toggle="modal" data-target="#exampleModal3">
-                                                Front
-                                            </button>
-                                            
-                                            <!-- Modal -->
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <style>
-                                .modal-dialog{
-                                    max-width: 50vw !important;
-                                }
-                            </style>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Annotate here</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    </div>
-                                    <div class="modal-body">
-                                    <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605169057.jpg" alt="">
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Update</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605168565.jpg" alt="">
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Update</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605168880.jpg" alt="">
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Update</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card shadow mb-4">
-                                <div class="card-header py-3 bg-dark">
-                                    <h6 class="m-0 font-weight-bold text-white">Doctor's analysis</h6>
+                                        .switch-field input {
+                                            position: absolute !important;
+                                            clip: rect(0, 0, 0, 0);
+                                            height: 1px;
+                                            width: 1px;
+                                            border: 0;
+                                            overflow: hidden;
+                                        }
+
+                                        .switch-field label {
+                                            background-color: #fafafa;
+                                            color: rgba(0, 0, 0, 0.6);
+                                            font-size: 14px;
+                                            line-height: 1;
+                                            text-align: center;
+                                            padding: 8px 16px;
+                                            margin-right: -1px;
+                                            transition: all 0.1s ease-in-out;
+                                        }
+
+                                        .switch-field label:hover {
+                                            cursor: pointer;
+                                        }
+
+                                        .switch-field input:checked + label {
+                                            background-color: #1cc88a;
+                                            box-shadow: none;
+                                            color: white;
+                                        }
+
+                                        .switch-field label:first-of-type {
+                                            border-radius: 4px 0 0 4px;
+                                        }
+
+                                        .switch-field label:last-of-type {
+                                            border-radius: 0 4px 4px 0;
+                                        }
+
+                                        /* This is just for CodePen. */
+
+
+
+                                    </style>
+                        <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="card shadow mb-2">
-                                        <!-- Card Header - Accordion -->
-                                        <a href="#collapseCardExample2" class="d-block card-header py-3" data-toggle="collapse"
-                                            role="button" aria-expanded="true" aria-controls="collapseCardExample2">
-                                            <h6 class="m-0 font-weight-bold text-dark">History</h6>
-                                        </a>
-                                        <!-- Card Content - Collapse -->
-                                        <div class="collapse show" id="collapseCardExample2">
-                                            <div class="card-body">
-                                                <div class="input-group mb-2">
-                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Medical history"
-                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                    <!-- <div class="input-group-append">
-                                                        <button class="btn btn-white text-success" type="button">
-                                                            <i class="fas fa-check fa-sm mr-2"></i> Medical history
-                                                        </button>
-                                                    </div> -->
-                                                </div>
-                                                <div class="input-group mb-2">
-                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Dental history"
-                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                    <!-- <div class="input-group-append">
-                                                        <button class="btn btn-white text-success" type="button">
-                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                        </button>
-                                                    </div> -->
-                                                </div>
-                                                
-                                                <br>
-                                                
-                                                <h4 class="small font-weight-bold">Section status <span
-                                                    class="float-right text-success">Complete!</span></h4>
-                                            <div class="progress progress-sm">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <form action="">
+
+                                        <div id="step1">
+                                            <h1 class="h5 mb-3 text-gray-800">History</h1>
+                                            <div class="input-group mb-2">
+                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Dental history"
+                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                <!-- <div class="input-group-append">
+                                                    <button class="btn btn-white text-success" type="button">
+                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                    </button>
+                                                </div> -->
                                             </div>
+                                            <div class="input-group mb-2">
+                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Medical history"
+                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                <!-- <div class="input-group-append">
+                                                    <button class="btn btn-white text-success" type="button">
+                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                    </button>
+                                                </div> -->
+                                            </div>
+                                            <div>
+                                                <input type="button" id="secbutt1" onclick="myFunction()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                                         
+                                                    
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card shadow mb-2">
-                                        <!-- Card Header - Accordion -->
-                                        <a href="#collapseCardExample3" class="d-block card-header py-3" data-toggle="collapse"
-                                            role="button" aria-expanded="true" aria-controls="collapseCardExample3">
-                                            <h6 class="m-0 font-weight-bold text-dark">Gum health</h6>
-                                        </a>
-                                        <!-- Card Content - Collapse -->
-                                        <div class="collapse" id="collapseCardExample3">
-                                            <div class="card-body">
-                                                <div class="row mt-2">
+                                        <div id="step2">
+                                            <h1 class="h5 mb-3 text-gray-800">Gum health</h1>
+                                            <div class="row mt-2">
                                                     <div class="col-4">
                                                         <p class="small m-0 pl-2">Gingivitis</p>
                                                         <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
@@ -588,26 +493,16 @@
                                                     
                                                 </div>
                                                 <br>
-                                                
-                                                <h4 class="small font-weight-bold">Section status <span
-                                                    class="float-right text-success">Complete!</span></h4>
-                                            <div class="progress progress-sm">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 50%"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                            <div>
+                                                <input type="button" id="secbutt2" onclick="myFunction2()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                                <input type="button" id="secbutt2a" onclick="myFunction2a()" class="btn btn-light mx-1 float-right m-0"  value="Previous step">
+                                                         
+                                                    
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card shadow mb-2">
-                                        <!-- Card Header - Accordion -->
-                                        <a href="#collapseCardExample4" class="d-block card-header py-3" data-toggle="collapse"
-                                            role="button" aria-expanded="true" aria-controls="collapseCardExample4">
-                                            <h6 class="m-0 font-weight-bold text-dark">Teeth health</h6>
-                                        </a>
-                                        <!-- Card Content - Collapse -->
-                                        <div class="collapse" id="collapseCardExample4">
-                                            <div class="card-body">
-                                                <div class="row">
+                                        <div id="step3">
+                                            <h1 class="h5 mb-3 text-gray-800">Teeth health</h1>
+                                            <div class="row">
 
                                                     <div class="col-6 p-0 m-0 mb-2">
                                                         <p class="small m-0 pl-2">Root stumps</p>
@@ -724,58 +619,38 @@
                                                     </div>
                                                 </div>
                                                 <br>
-                                                
-                                                <h4 class="small font-weight-bold">Section status <span
-                                                    class="float-right text-success">Complete!</span></h4>
-                                            <div class="progress progress-sm">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card shadow mb-2">
-                                        <!-- Card Header - Accordion -->
-                                        <a href="#collapseCardExample5" class="d-block card-header py-3" data-toggle="collapse"
-                                            role="button" aria-expanded="true" aria-controls="collapseCardExample5">
-                                            <h6 class="m-0 font-weight-bold text-dark">Emergency finding</h6>
-                                        </a>
-                                        <!-- Card Content - Collapse -->
-                                        <div class="collapse" id="collapseCardExample5">
-                                            <div class="card-body">
-                                                
-                                                <div class="input-group mb-2">
-                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Emergency findings"
-                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                    <!-- <div class="input-group-append">
-                                                        <button class="btn btn-white text-success" type="button">
-                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                        </button>
-                                                    </div> -->
-                                                </div>
-                                                <br>
-                                                
-                                                <h4 class="small font-weight-bold">Section status <span
-                                                    class="float-right text-success">Complete!</span></h4>
-                                            <div class="progress progress-sm">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                            
+                                            <div>
+                                                <input type="button" id="secbutt3" onclick="myFunction3()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                                <input type="button" id="secbutt3a" onclick="myFunction3a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
+                                                         
+                                                    
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card shadow mb-2">
-                                        <!-- Card Header - Accordion -->
-                                        <a href="#collapseCardExample6" class="d-block card-header py-3" data-toggle="collapse"
-                                            role="button" aria-expanded="true" aria-controls="collapseCardExample6">
-                                            <h6 class="m-0 font-weight-bold text-dark">Treatment plan</h6>
-                                        </a>
-                                        <!-- Card Content - Collapse -->
-                                        <div class="collapse" id="collapseCardExample6">
-                                            <div class="card-body">
-                                                <div class="row">
+                                        <div id="step4">
+                                            <h1 class="h5 mb-3 text-gray-800">Emergency findings</h1>
+                                            <div class="input-group mb-2">
+                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Emergency findings"
+                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                <!-- <div class="input-group-append">
+                                                    <button class="btn btn-white text-success" type="button">
+                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                    </button>
+                                                </div> -->
+                                            </div>
+                                            
+                                            <div>
+                                                <input type="button" id="secbutt4" onclick="myFunction4()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                                <input type="button" id="secbutt4a" onclick="myFunction4a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
+                                                         
+                                                    
+                                            </div>
+                                        </div>
+                                        <div id="step5">
+                                            <h1 class="h5 mb-3 text-gray-800">Treatment plan</h1>
+                                            <div class="row">
                                                     <div class="col-4 p-1">
-                                                        <p class="small m-0 mb-1 ">Diagnosis</p>
+                                                        <p class="small m-0 mb-1 pl-2">Diagnosis</p>
                                                         <div class="input-group mb-2">
                                                             <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
                                                                 aria-label="Search" aria-describedby="basic-addon2"></textarea>
@@ -787,7 +662,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-4 p-1">
-                                                        <p class="small m-0 mb-1 ">Preventive care</p>
+                                                        <p class="small m-0 mb-1 pl-2">Preventive care</p>
                                                         <div class="input-group mb-2">
                                                             <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
                                                                 aria-label="Search" aria-describedby="basic-addon2"></textarea>
@@ -799,7 +674,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-4 p-1">
-                                                        <p class="small m-0 mb-1 ">Patient referral</p>
+                                                        <p class="small m-0 mb-1 pl-2">Patient referral</p>
                                                         <div class="input-group mb-2">
                                                             <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
                                                                 aria-label="Search" aria-describedby="basic-addon2"></textarea>
@@ -811,27 +686,17 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <br>
-                                                
-                                                <h4 class="small font-weight-bold">Section status <span
-                                                    class="float-right text-success">Complete!</span></h4>
-                                            <div class="progress progress-sm">
-                                                <div class="progress-bar bg-success" role="progressbar" style="width: 75%"
-                                                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                            </div>
+                                            
+                                            <div>
+                                                <input type="button" id="secbutt5" onclick="myFunction5()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                                <input type="button" id="secbutt5a" onclick="myFunction5a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
+                                                         
+                                                    
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card shadow mb-2">
-                                        <!-- Card Header - Accordion -->
-                                        <a href="#collapseCardExample7" class="d-block card-header py-3" data-toggle="collapse"
-                                            role="button" aria-expanded="true" aria-controls="collapseCardExample7">
-                                            <h6 class="m-0 font-weight-bold text-dark">Doctor details</h6>
-                                        </a>
-                                        <!-- Card Content - Collapse -->
-                                        <div class="collapse" id="collapseCardExample7">
-                                            <div class="card-body">
-                                                <div class="row">
+                                        <div id="step6">
+                                            <h1 class="h5 mb-3 text-gray-800">Doctor details</h1>
+                                            <div class="row">
                                                     <div class="col-8">
 
                                                         <div class="input-group mb-2">
@@ -857,77 +722,260 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                            
+                                            <div>
+                                                <input type="button" id="secbutt6" onclick="myFunction6()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                                <input type="button" id="secbutt6a" onclick="myFunction6a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
+                                                         
+                                                    
                                             </div>
                                         </div>
-                                    </div>
+                                        <br>
+                                        <div id="step7">
+                                            <div class="row pl-2">
+                                                    <div class="switch-field my-3">
+                                                        <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
+                                                        <label for="radio-one">Review</label>
+                                                        <input type="radio" id="radio-two" name="switch-one" value="no" />
+                                                        <label for="radio-two">Submit</label>
+                                                    </div>
+                                                </div>
+                                            
+                                            <div>
+                                                <input type="button" id="" onclick="myFunction6()" class="btn btn-success mx-1 float-right m-0"  value="Submit">
+                                                         
+                                                    
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <script>
+                                    function myFunction(){
+                                            var x= document.getElementById("step1");
+                                            x.style.display="none";
+                                            var y= document.getElementById("step2");
+                                            y.style.display="block";
+                                        }
+                                        
+                                        </script>
+                                <script>
+                                    function myFunction2(){
+                                            var x= document.getElementById("step2");
+                                            x.style.display="none";
+                                            var y= document.getElementById("step3");
+                                            y.style.display="block";
+                                        }
                                     
-                                    <style>
-                                        .switch-field {
-                                            display: flex;
-                                            overflow: hidden;
+
+                                </script>
+                                <script>
+                                    function myFunction2a(){
+                                            var x= document.getElementById("step2");
+                                            x.style.display="none";
+                                            var y= document.getElementById("step1");
+                                            y.style.display="block";
                                         }
-
-                                        .switch-field input {
-                                            position: absolute !important;
-                                            clip: rect(0, 0, 0, 0);
-                                            height: 1px;
-                                            width: 1px;
-                                            border: 0;
-                                            overflow: hidden;
+                                </script>
+                                <script>
+                                    function myFunction3(){
+                                            var x= document.getElementById("step3");
+                                            x.style.display="none";
+                                            var y= document.getElementById("step4");
+                                            y.style.display="block";
                                         }
+                                    
 
-                                        .switch-field label {
-                                            background-color: #e4e4e4;
-                                            color: rgba(0, 0, 0, 0.6);
-                                            font-size: 14px;
-                                            line-height: 1;
-                                            text-align: center;
-                                            padding: 8px 16px;
-                                            margin-right: -1px;
-                                            transition: all 0.1s ease-in-out;
+                                </script>
+                                <script>
+                                    function myFunction3a(){
+                                            var x= document.getElementById("step3");
+                                            x.style.display="none";
+                                            var y= document.getElementById("step2");
+                                            y.style.display="block";
                                         }
-
-                                        .switch-field label:hover {
-                                            cursor: pointer;
+                                </script>
+                                <script>
+                                    function myFunction4(){
+                                            var x= document.getElementById("step4");
+                                            x.style.display="none";
+                                            var y= document.getElementById("step5");
+                                            y.style.display="block";
                                         }
+                                    
 
-                                        .switch-field input:checked + label {
-                                            background-color: #1cc88a;
-                                            box-shadow: none;
-                                            color: white;
+                                </script>
+                                <script>
+                                    function myFunction4a(){
+                                            var x= document.getElementById("step4");
+                                            x.style.display="none";
+                                            var y= document.getElementById("step3");
+                                            y.style.display="block";
                                         }
-
-                                        .switch-field label:first-of-type {
-                                            border-radius: 4px 0 0 4px;
+                                </script>
+                                <script>
+                                    function myFunction5(){
+                                            var x= document.getElementById("step5");
+                                            x.style.display="none";
+                                            var y= document.getElementById("step6");
+                                            y.style.display="block";
                                         }
+                                    
 
-                                        .switch-field label:last-of-type {
-                                            border-radius: 0 4px 4px 0;
+                                </script>
+                                <script>
+                                    function myFunction5a(){
+                                            var x= document.getElementById("step5");
+                                            x.style.display="none";
+                                            var y= document.getElementById("step4");
+                                            y.style.display="block";
                                         }
+                                </script>
+                                <script>
+                                    function myFunction6a(){
+                                            var x= document.getElementById("step6");
+                                            x.style.display="none";
+                                            var y= document.getElementById("step5");
+                                            y.style.display="block";
+                                        }
+                                </script>
+                                <script>
+                                    function myFunction6(){
+                                        var x= document.getElementById("step1");
+                                        x.style.display="block";
+                                        var y= document.getElementById("step2");
+                                        y.style.display="block";
+                                        var z= document.getElementById("step3");
+                                        z.style.display="block";
+                                        var a= document.getElementById("step4");
+                                        a.style.display="block";
+                                        var b= document.getElementById("step5");
+                                        b.style.display="block";
+                                        var c= document.getElementById("step6");
+                                        c.style.display="block";
+                                        var d= document.getElementById("step7");
+                                        d.style.display="block";
+                                        
+                                        var button = document.getElementById("secbutt1");
+                                        button.style.display="none";
+                                        var button2 = document.getElementById("secbutt2");
+                                        button2.style.display="none";
+                                        var button2a = document.getElementById("secbutt2a");
+                                        button2a.style.display="none";
+                                        var button3 = document.getElementById("secbutt3");
+                                        button3.style.display="none";
+                                        var button3a = document.getElementById("secbutt3a");
+                                        button3a.style.display="none";
+                                        var button4 = document.getElementById("secbutt4");
+                                        button4.style.display="none";
+                                        var button4a = document.getElementById("secbutt4a");
+                                        button4a.style.display="none";
+                                        var button5 = document.getElementById("secbutt5");
+                                        button5.style.display="none";
+                                        var button6 = document.getElementById("secbutt6");
+                                        button6.style.display="none";
+                                        var button5a = document.getElementById("secbutt5a");
+                                        button5a.style.display="none";
+                                        var button6a = document.getElementById("secbutt6a");
+                                        button6a.style.display="none";
+                                    }
+                                </script>
+                            </div>
+                    </div>
+                    <div class="col-6 m-0 p-0">
+                        <div class="card shadow mb-4 bg-white w-100">
+                            <div class="shadow" style="">
 
-                                        /* This is just for CodePen. */
-
-
-
-                                    </style>
-
-                                    <div class="switch-field my-3">
-                                        <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
-                                        <label for="radio-one">Review</label>
-                                        <input type="radio" id="radio-two" name="switch-one" value="no" />
-                                        <label for="radio-two">Submit</label>
+                                <!-- Card Header - Accordion -->
+                                <a href="#collapseCardExample" class="d-block card-header py-3 bg-dark" data-toggle="collapse"
+                                    role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                                    <h6 class="m-0 font-weight-bold text-white">Annotate the images</h6>
+                                </a>
+                                <!-- Card Content - Collapse -->
+                                <div class="collapse show" id="collapseCardExample">
+                                    <div class="card-body bg-white">
+                                        <div class="row">
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-primary mx-1" data-toggle="modal" data-target="#exampleModal">
+                                                Upper 
+                                            </button>
+                                            <button type="button" class="btn btn-primary mx-1" data-toggle="modal" data-target="#exampleModal2">
+                                                Lower 
+                                            </button>
+                                            <button type="button" class="btn btn-primary mx-1" data-toggle="modal" data-target="#exampleModal3">
+                                                Front
+                                            </button>
+                                            
+                                            <!-- Modal -->
+                                            
+                                        </div>
                                     </div>
-                                
-
-                                    <button type="button" class="btn btn-success px-5">
-                                        Submit
+                                </div>
+                            </div>
+                            <style>
+                                .modal-dialog{
+                                    max-width: 50vw !important;
+                                }
+                            </style>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Annotate here</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
                                     </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605169057.jpg" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Update</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605168565.jpg" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Update</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605168880.jpg" alt="">
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Update</button>
+                                    </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        
                     </div>
+                    
                 </div>
                 <!-- /.container-fluid -->
 

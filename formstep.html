@@ -25,7 +25,7 @@
             <br>
             <input type="text" placeholder="name">
             <br>
-            <input type="button" id="sub_btn" onclick="myFunction()" placeholder="next" value="next">
+            <input type="button" id="sub_btn1" onclick="myFunction()" placeholder="next" value="next">
         </div>
         <div id="step2">
 
@@ -33,7 +33,7 @@
             <br>
             <input type="text" placeholder="name2">
             <br>
-            <input type="button" id="sub_btn" onclick="myFunction2()" placeholder="next" value="next2">
+            <input type="button" id="sub_btn2" onclick="myFunction2()" placeholder="next" value="next2">
         </div>
         <div id="step3">
 
@@ -69,8 +69,11 @@
         y.style.display="block";
         var z= document.getElementById("step3");
         y.style.display="block";
-        var button = document.getElementById("sub_btn");
+        
+        var button = document.getElementById("sub_btn1");
         button.style.display="none";
+        var button2 = document.getElementById("sub_btn2");
+        button2.style.display="none";
     }
 </script>
 </html>
