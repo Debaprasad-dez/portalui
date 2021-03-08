@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #step1{
+        display: block;
+    }
+    #step2{
+        display: none;
+    }
+    #step3{
+        display: none;
+    }
+</style>
+<body>
+    <form action="">
+        <div id="step1">
+
+            <input type="text" placeholder="name">
+            <br>
+            <input type="text" placeholder="name">
+            <br>
+            <input type="button" id="sub_btn" onclick="myFunction()" placeholder="next" value="next">
+        </div>
+        <div id="step2">
+
+            <input type="text" placeholder="name2">
+            <br>
+            <input type="text" placeholder="name2">
+            <br>
+            <input type="button" id="sub_btn" onclick="myFunction2()" placeholder="next" value="next2">
+        </div>
+        <div id="step3">
+
+            <input type="text" placeholder="name3">
+            <br>
+            <input type="text" placeholder="name3">
+            <br>
+            <input type="button" onclick="myFunction3()" placeholder="next" value="next3">
+        </div>
+    </form>
+</body>
+<script>
+    function myFunction(){
+        var x= document.getElementById("step1");
+        x.style.display="none";
+        var y= document.getElementById("step2");
+        y.style.display="block";
+    }
+</script>
+<script>
+    function myFunction2(){
+        var x= document.getElementById("step2");
+        x.style.display="none";
+        var y= document.getElementById("step3");
+        y.style.display="block";
+    }
+</script>
+<script>
+    function myFunction3(){
+        var x= document.getElementById("step1");
+        x.style.display="block";
+        var y= document.getElementById("step2");
+        y.style.display="block";
+        var z= document.getElementById("step3");
+        y.style.display="block";
+        var button = document.getElementById("sub_btn");
+        button.style.display="none";
+    }
+</script>
+</html>
