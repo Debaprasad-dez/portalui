@@ -106,7 +106,7 @@
                     <i class="fas fa-fw fa-folder"></i>
                     <span>Pages</span>
                 </a>
-                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages"
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
@@ -349,630 +349,702 @@
                 <!-- End of Topbar -->
                 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
-                    <h1 class="h3 mb-3 text-gray-800">Doctors Report</h1>
+                <div class="container-fluid px-1">
+                    <h1 class="h3 mb-3 text-gray-800 ml-2">Doctors Report</h1>
                     <!-- Page Heading -->
-                    <div class="col-md-6 m-0 p-0">
-                        <style>
-                            #step1{
-                                display: block;
-                            }
-                            #step2{
-                                display: none;
-                            }
-                            #step3{
-                                display: none;
-                            }
-                            #step4{
-                                display: none;
-                            }
-                            #step5{
-                                display: none;
-                            }
-                            #step6{
-                                display: none;
-                            }
-                            #step7{
-                                display: none;
-                            }
-                        </style>
-                        <style>
-                                        .switch-field {
-                                            display: flex;
-                                            overflow: hidden;
-                                        }
+                    <div class="row p-0 m-0">
 
-                                        .switch-field input {
-                                            position: absolute !important;
-                                            clip: rect(0, 0, 0, 0);
-                                            height: 1px;
-                                            width: 1px;
-                                            border: 0;
-                                            overflow: hidden;
-                                        }
-
-                                        .switch-field label {
-                                            background-color: #fafafa;
-                                            color: rgba(0, 0, 0, 0.6);
-                                            font-size: 14px;
-                                            line-height: 1;
-                                            text-align: center;
-                                            padding: 8px 16px;
-                                            margin-right: -1px;
-                                            transition: all 0.1s ease-in-out;
-                                        }
-
-                                        .switch-field label:hover {
-                                            cursor: pointer;
-                                        }
-
-                                        .switch-field input:checked + label {
-                                            background-color: #1cc88a;
-                                            box-shadow: none;
-                                            color: white;
-                                        }
-
-                                        .switch-field label:first-of-type {
-                                            border-radius: 4px 0 0 4px;
-                                        }
-
-                                        .switch-field label:last-of-type {
-                                            border-radius: 0 4px 4px 0;
-                                        }
-
-                                        /* This is just for CodePen. */
-
-
-
-                                    </style>
-                        <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
-                                </div>
-                                <div class="card-body">
-                                    <form action="">
-
-                                        <div id="step1">
-                                            <h1 class="h5 mb-3 text-gray-800">History</h1>
-                                            <div class="input-group mb-2">
-                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Dental history"
-                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                <!-- <div class="input-group-append">
-                                                    <button class="btn btn-white text-success" type="button">
-                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                    </button>
-                                                </div> -->
-                                            </div>
-                                            <div class="input-group mb-2">
-                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Medical history"
-                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                <!-- <div class="input-group-append">
-                                                    <button class="btn btn-white text-success" type="button">
-                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                    </button>
-                                                </div> -->
-                                            </div>
-                                            <div>
-                                                <input type="button" id="secbutt1" onclick="myFunction()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                                         
-                                                    
-                                            </div>
-                                        </div>
-                                        <div id="step2">
-                                            <h1 class="h5 mb-3 text-gray-800">Gum health</h1>
-                                            <div class="row mt-2">
-                                                    <div class="col-4">
-                                                        <p class="small m-0 pl-2">Gingivitis</p>
-                                                        <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
-                                                            <option selected>Absent</option>
-                                                            <option value="1">Present</option>
-                                                            
-                                                          </select>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <p class="small m-0 pl-2">Gum recession</p>
-                                                        <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
-                                                            <option selected>Absent</option>
-                                                            <option value="1">Class 1</option>
-                                                            <option value="2">Class 2</option>
-                                                            <option value="3">Class 3</option>
-                                                            <option value="4">Class 4</option>
-                                                          </select>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <p class="small m-0 pl-2">Oral hygiene</p>
-                                                        <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
-                                                            <option selected>null</option>
-                                                            <option value="1">Excellent</option>
-                                                            <option value="2">Good</option>
-                                                            <option value="3">Fair+++</option>
-                                                            <option value="3">Poor</option>
-                                                          </select>
-                                                    </div>
-                                                    
-                                                    
-                                                </div>
-                                                <br>
-                                            <div>
-                                                <input type="button" id="secbutt2" onclick="myFunction2()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                                <input type="button" id="secbutt2a" onclick="myFunction2a()" class="btn btn-light mx-1 float-right m-0"  value="Previous step">
-                                                         
-                                                    
-                                            </div>
-                                        </div>
-                                        <div id="step3">
-                                            <h1 class="h5 mb-3 text-gray-800">Teeth health</h1>
-                                            <div class="row">
-
-                                                    <div class="col-6 p-0 m-0 mb-2">
-                                                        <p class="small m-0 pl-2">Root stumps</p>
-                                                        <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
-                                                            <option selected>Absent</option>
-                                                            <option value="2">Present</option>
-                                                          </select>
-                                                    </div>
-                                                    <div class="col-6">
-    
-                                                        <div class="input-group mb-2">
-                                                            <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
-                                                                aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                            <!-- <div class="input-group-append">
-                                                                <button class="btn btn-white text-success" type="button">
-                                                                    <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                </button>
-                                                            </div> -->
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 p-0 m-0 mb-2">
-                                                        <p class="small m-0 pl-2">Tooth decay</p>
-                                                        <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
-                                                            <option selected>Absent</option>
-                                                            <option value="2">Present</option>
-                                                          </select>
-                                                    </div>
-                                                    <div class="col-6">
-    
-                                                        <div class="input-group mb-2">
-                                                            <textarea type="text" class="form-control bg-light border-0 small" placeholder="Tooth decay description"
-                                                                aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                            <!-- <div class="input-group-append">
-                                                                <button class="btn btn-white text-success" type="button">
-                                                                    <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                </button>
-                                                            </div> -->
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6 p-0 m-0 mb-2">
-                                                        <p class="small m-0 pl-2">Tooth wear</p>
-                                                        <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
-                                                            <option selected>Absent</option>
-                                                            <option value="2">Present</option>
-                                                          </select>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <p class="small m-0 ">Missing tooth</p>
-                                                    <div class="row">
-                                                        <div class="col-6 p-0 m-0 mb-2">
-                                                            <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
-                                                                <option selected>Absent</option>
-                                                                <option value="2">Present</option>
-                                                              </select>
-                                                        </div>
-                                                        <div class="col-6">
-        
-                                                            <div class="input-group mb-2">
-                                                                <input type="text" class="form-control bg-light border-0 small" placeholder="Missing tooth number"
-                                                                    aria-label="Search" aria-describedby="basic-addon2">
-                                                                <!-- <div class="input-group-append">
-                                                                    <button class="btn btn-white text-success" type="button">
-                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                    </button>
-                                                                </div> -->
-                                                            </div>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                    <p class="small m-0 ">Non-vital tooth</p>
-                                                    <div class="row">
-                                                        <div class="col-6 p-0 m-0 mb-2">
-                                                            <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
-                                                                <option selected>Absent</option>
-                                                                <option value="2">Present</option>
-                                                              </select>
-                                                        </div>
-                                                        <div class="col-6">
-        
-                                                            <div class="input-group mb-2">
-                                                                <input type="text" class="form-control bg-light border-0 small" placeholder="Non-vital tooth number"
-                                                                    aria-label="Search" aria-describedby="basic-addon2">
-                                                                <!-- <div class="input-group-append">
-                                                                    <button class="btn btn-white text-success" type="button">
-                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                    </button>
-                                                                </div> -->
-                                                            </div>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-6 p-0 mb-2">
-                                                            <p class="small m-0 pl-2">Crowding</p>
-                                                            <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
-                                                                <option selected>Absent</option>
-                                                                <option value="2">Present with respect to Lower-anterior / upper anterior.</option>
-                                                                <option value="3">Left lower posterior region / left posterior upper region</option>
-                                                                <option value="4">Right posterior upper region / Right posterior lower region</option>
-                                                              </select>
-                                                        </div>
-                                                        <div class="col-6   mb-2">
-                                                            <p class="small m-0 pl-2">Spacing</p>
-                                                            <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
-                                                                <option selected>Absent</option>
-                                                                <option value="2">Present with respect to Lower-anterior / upper anterior.</option>
-                                                                <option value="2">Left lower posterior region / left posterior upper region</option>
-                                                                <option value="2">Right posterior upper region / Right posterior lower region</option>
-                                                              </select>
-                                                        </div>
-                                                        
-                                                        
-                                                    </div>
-                                                </div>
-                                                <br>
-                                            
-                                            <div>
-                                                <input type="button" id="secbutt3" onclick="myFunction3()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                                <input type="button" id="secbutt3a" onclick="myFunction3a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
-                                                         
-                                                    
-                                            </div>
-                                        </div>
-                                        <div id="step4">
-                                            <h1 class="h5 mb-3 text-gray-800">Emergency findings</h1>
-                                            <div class="input-group mb-2">
-                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Emergency findings"
-                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                <!-- <div class="input-group-append">
-                                                    <button class="btn btn-white text-success" type="button">
-                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                    </button>
-                                                </div> -->
-                                            </div>
-                                            
-                                            <div>
-                                                <input type="button" id="secbutt4" onclick="myFunction4()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                                <input type="button" id="secbutt4a" onclick="myFunction4a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
-                                                         
-                                                    
-                                            </div>
-                                        </div>
-                                        <div id="step5">
-                                            <h1 class="h5 mb-3 text-gray-800">Treatment plan</h1>
-                                            <div class="row">
-                                                    <div class="col-4 p-1">
-                                                        <p class="small m-0 mb-1 pl-2">Diagnosis</p>
-                                                        <div class="input-group mb-2">
-                                                            <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
-                                                                aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                            <!-- <div class="input-group-append">
-                                                                <button class="btn btn-white text-success" type="button">
-                                                                    <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                </button>
-                                                            </div> -->
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 p-1">
-                                                        <p class="small m-0 mb-1 pl-2">Preventive care</p>
-                                                        <div class="input-group mb-2">
-                                                            <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
-                                                                aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                            <!-- <div class="input-group-append">
-                                                                <button class="btn btn-white text-success" type="button">
-                                                                    <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                </button>
-                                                            </div> -->
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4 p-1">
-                                                        <p class="small m-0 mb-1 pl-2">Patient referral</p>
-                                                        <div class="input-group mb-2">
-                                                            <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
-                                                                aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                            <!-- <div class="input-group-append">
-                                                                <button class="btn btn-white text-success" type="button">
-                                                                    <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                </button>
-                                                            </div> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            
-                                            <div>
-                                                <input type="button" id="secbutt5" onclick="myFunction5()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                                <input type="button" id="secbutt5a" onclick="myFunction5a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
-                                                         
-                                                    
-                                            </div>
-                                        </div>
-                                        <div id="step6">
-                                            <h1 class="h5 mb-3 text-gray-800">Doctor details</h1>
-                                            <div class="row">
-                                                    <div class="col-8">
-
-                                                        <div class="input-group mb-2">
-                                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Doctor name"
-                                                                aria-label="Search" aria-describedby="basic-addon2">
-                                                            <!-- <div class="input-group-append">
-                                                                <button class="btn btn-white text-success" type="button">
-                                                                    <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                </button>
-                                                            </div> -->
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-4">
-
-                                                        <div class="input-group mb-2">
-                                                            <input type="text" class="form-control bg-light border-0 small" placeholder="Registration ID"
-                                                                aria-label="Search" aria-describedby="basic-addon2">
-                                                            <!-- <div class="input-group-append">
-                                                                <button class="btn btn-white text-success" type="button">
-                                                                    <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                </button>
-                                                            </div> -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            
-                                            <div>
-                                                <input type="button" id="secbutt6" onclick="myFunction6()" class="btn btn-primary mx-1 float-right m-0"  value="Preview form">
-                                                <input type="button" id="secbutt6a" onclick="myFunction6a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
-                                                         
-                                                    
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div id="step7">
-                                            <div class="row pl-2">
-                                                    <div class="switch-field my-3">
-                                                        <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
-                                                        <label for="radio-one">Review</label>
-                                                        <input type="radio" id="radio-two" name="switch-one" value="no" />
-                                                        <label for="radio-two">Submit</label>
-                                                    </div>
-                                                </div>
-                                            
-                                            <div>
-                                                <input type="button" id="" onclick="myFunction6()" class="btn btn-success mx-1 float-right m-0"  value="Submit">
-                                                         
-                                                    
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                                <script>
-                                    function myFunction(){
-                                            var x= document.getElementById("step1");
-                                            x.style.display="none";
-                                            var y= document.getElementById("step2");
-                                            y.style.display="block";
-                                        }
-                                        
-                                        </script>
-                                <script>
-                                    function myFunction2(){
-                                            var x= document.getElementById("step2");
-                                            x.style.display="none";
-                                            var y= document.getElementById("step3");
-                                            y.style.display="block";
-                                        }
-                                    
-
-                                </script>
-                                <script>
-                                    function myFunction2a(){
-                                            var x= document.getElementById("step2");
-                                            x.style.display="none";
-                                            var y= document.getElementById("step1");
-                                            y.style.display="block";
-                                        }
-                                </script>
-                                <script>
-                                    function myFunction3(){
-                                            var x= document.getElementById("step3");
-                                            x.style.display="none";
-                                            var y= document.getElementById("step4");
-                                            y.style.display="block";
-                                        }
-                                    
-
-                                </script>
-                                <script>
-                                    function myFunction3a(){
-                                            var x= document.getElementById("step3");
-                                            x.style.display="none";
-                                            var y= document.getElementById("step2");
-                                            y.style.display="block";
-                                        }
-                                </script>
-                                <script>
-                                    function myFunction4(){
-                                            var x= document.getElementById("step4");
-                                            x.style.display="none";
-                                            var y= document.getElementById("step5");
-                                            y.style.display="block";
-                                        }
-                                    
-
-                                </script>
-                                <script>
-                                    function myFunction4a(){
-                                            var x= document.getElementById("step4");
-                                            x.style.display="none";
-                                            var y= document.getElementById("step3");
-                                            y.style.display="block";
-                                        }
-                                </script>
-                                <script>
-                                    function myFunction5(){
-                                            var x= document.getElementById("step5");
-                                            x.style.display="none";
-                                            var y= document.getElementById("step6");
-                                            y.style.display="block";
-                                        }
-                                    
-
-                                </script>
-                                <script>
-                                    function myFunction5a(){
-                                            var x= document.getElementById("step5");
-                                            x.style.display="none";
-                                            var y= document.getElementById("step4");
-                                            y.style.display="block";
-                                        }
-                                </script>
-                                <script>
-                                    function myFunction6a(){
-                                            var x= document.getElementById("step6");
-                                            x.style.display="none";
-                                            var y= document.getElementById("step5");
-                                            y.style.display="block";
-                                        }
-                                </script>
-                                <script>
-                                    function myFunction6(){
-                                        var x= document.getElementById("step1");
-                                        x.style.display="block";
-                                        var y= document.getElementById("step2");
-                                        y.style.display="block";
-                                        var z= document.getElementById("step3");
-                                        z.style.display="block";
-                                        var a= document.getElementById("step4");
-                                        a.style.display="block";
-                                        var b= document.getElementById("step5");
-                                        b.style.display="block";
-                                        var c= document.getElementById("step6");
-                                        c.style.display="block";
-                                        var d= document.getElementById("step7");
-                                        d.style.display="block";
-                                        
-                                        var button = document.getElementById("secbutt1");
-                                        button.style.display="none";
-                                        var button2 = document.getElementById("secbutt2");
-                                        button2.style.display="none";
-                                        var button2a = document.getElementById("secbutt2a");
-                                        button2a.style.display="none";
-                                        var button3 = document.getElementById("secbutt3");
-                                        button3.style.display="none";
-                                        var button3a = document.getElementById("secbutt3a");
-                                        button3a.style.display="none";
-                                        var button4 = document.getElementById("secbutt4");
-                                        button4.style.display="none";
-                                        var button4a = document.getElementById("secbutt4a");
-                                        button4a.style.display="none";
-                                        var button5 = document.getElementById("secbutt5");
-                                        button5.style.display="none";
-                                        var button6 = document.getElementById("secbutt6");
-                                        button6.style.display="none";
-                                        var button5a = document.getElementById("secbutt5a");
-                                        button5a.style.display="none";
-                                        var button6a = document.getElementById("secbutt6a");
-                                        button6a.style.display="none";
-                                    }
-                                </script>
-                            </div>
-                    </div>
-                    <div class="col-md-6 m-0 p-0">
-                        <div class="card shadow mb-4 bg-white w-100">
-                            <div class="shadow" style="">
-
-                                <!-- Card Header - Accordion -->
-                                <a href="#collapseCardExample" class="d-block card-header py-3 bg-dark" data-toggle="collapse"
-                                    role="button" aria-expanded="true" aria-controls="collapseCardExample">
-                                    <h6 class="m-0 font-weight-bold text-white">Annotate the images</h6>
-                                </a>
-                                <!-- Card Content - Collapse -->
-                                <div class="collapse show" id="collapseCardExample">
-                                    <div class="card-body bg-white">
-                                        <div class="row">
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="btn btn-primary mx-1" data-toggle="modal" data-target="#exampleModal">
-                                                Upper 
-                                            </button>
-                                            <button type="button" class="btn btn-primary mx-1" data-toggle="modal" data-target="#exampleModal2">
-                                                Lower 
-                                            </button>
-                                            <button type="button" class="btn btn-primary mx-1" data-toggle="modal" data-target="#exampleModal3">
-                                                Front
-                                            </button>
-                                            
-                                            <!-- Modal -->
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-6 ">
                             <style>
-                                .modal-dialog{
-                                    max-width: 50vw !important;
+                                #step1{
+                                    display: block;
+                                }
+                                #step2{
+                                    display: none;
+                                }
+                                #step3{
+                                    display: none;
+                                }
+                                #step4{
+                                    display: none;
+                                }
+                                #step5{
+                                    display: none;
+                                }
+                                #step6{
+                                    display: none;
+                                }
+                                #step7{
+                                    display: none;
                                 }
                             </style>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Annotate here</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                            <style>
+                                            .switch-field {
+                                                display: flex;
+                                                overflow: hidden;
+                                            }
+    
+                                            .switch-field input {
+                                                position: absolute !important;
+                                                clip: rect(0, 0, 0, 0);
+                                                height: 1px;
+                                                width: 1px;
+                                                border: 0;
+                                                overflow: hidden;
+                                            }
+    
+                                            .switch-field label {
+                                                background-color: #fafafa;
+                                                color: rgba(0, 0, 0, 0.6);
+                                                font-size: 14px;
+                                                line-height: 1;
+                                                text-align: center;
+                                                padding: 8px 16px;
+                                                margin-right: -1px;
+                                                transition: all 0.1s ease-in-out;
+                                            }
+    
+                                            .switch-field label:hover {
+                                                cursor: pointer;
+                                            }
+    
+                                            .switch-field input:checked + label {
+                                                background-color: #1cc88a;
+                                                box-shadow: none;
+                                                color: white;
+                                            }
+    
+                                            .switch-field label:first-of-type {
+                                                border-radius: 4px 0 0 4px;
+                                            }
+    
+                                            .switch-field label:last-of-type {
+                                                border-radius: 0 4px 4px 0;
+                                            }
+    
+                                            /* This is just for CodePen. */
+    
+    
+    
+                                        </style>
+                            <div class="card shadow mb-4">
+                                    <div class="card-header py-3">
+                                        <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
                                     </div>
-                                    <div class="modal-body">
-                                    <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605169057.jpg" alt="">
+                                    <div class="card-body">
+                                        <form action="">
+    
+                                            <div id="step1">
+                                                <h1 class="h5 mb-3 text-gray-800">History</h1>
+                                                <div class="input-group mb-2">
+                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Dental history"
+                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                    <!-- <div class="input-group-append">
+                                                        <button class="btn btn-white text-success" type="button">
+                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                        </button>
+                                                    </div> -->
+                                                </div>
+                                                <div class="input-group mb-2">
+                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Medical history"
+                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                    <!-- <div class="input-group-append">
+                                                        <button class="btn btn-white text-success" type="button">
+                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                        </button>
+                                                    </div> -->
+                                                </div>
+                                                <div>
+                                                    <input type="button" id="secbutt1" onclick="myFunction()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                                             
+                                                        
+                                                </div>
+                                            </div>
+                                            <div id="step2">
+                                                <h1 class="h5 mb-3 text-gray-800">Gum health</h1>
+                                                <div class="row mt-2">
+                                                        <div class="col-4">
+                                                            <p class="small m-0 pl-2">Gingivitis</p>
+                                                            <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
+                                                                <option selected>Absent</option>
+                                                                <option value="1">Present</option>
+                                                                
+                                                              </select>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <p class="small m-0 pl-2">Gum recession</p>
+                                                            <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
+                                                                <option selected>Absent</option>
+                                                                <option value="1">Class 1</option>
+                                                                <option value="2">Class 2</option>
+                                                                <option value="3">Class 3</option>
+                                                                <option value="4">Class 4</option>
+                                                              </select>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <p class="small m-0 pl-2">Oral hygiene</p>
+                                                            <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
+                                                                <option selected>null</option>
+                                                                <option value="1">Excellent</option>
+                                                                <option value="2">Good</option>
+                                                                <option value="3">Fair+++</option>
+                                                                <option value="3">Poor</option>
+                                                              </select>
+                                                        </div>
+                                                        
+                                                        
+                                                    </div>
+                                                    <br>
+                                                <div>
+                                                    <input type="button" id="secbutt2" onclick="myFunction2()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                                    <input type="button" id="secbutt2a" onclick="myFunction2a()" class="btn btn-light mx-1 float-right m-0"  value="Previous step">
+                                                             
+                                                        
+                                                </div>
+                                            </div>
+                                            <div id="step3">
+                                                <h1 class="h5 mb-3 text-gray-800">Teeth health</h1>
+                                                <div class="row">
+    
+                                                        <div class="col-6 p-0 m-0 mb-2">
+                                                            <p class="small m-0 pl-2">Root stumps</p>
+                                                            <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
+                                                                <option selected>Absent</option>
+                                                                <option value="2">Present</option>
+                                                              </select>
+                                                        </div>
+                                                        <div class="col-6">
+        
+                                                            <div class="input-group mb-2">
+                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
+                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 p-0 m-0 mb-2">
+                                                            <p class="small m-0 pl-2">Tooth decay</p>
+                                                            <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
+                                                                <option selected>Absent</option>
+                                                                <option value="2">Present</option>
+                                                              </select>
+                                                        </div>
+                                                        <div class="col-6">
+        
+                                                            <div class="input-group mb-2">
+                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Tooth decay description"
+                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 p-0 m-0 mb-2">
+                                                            <p class="small m-0 pl-2">Tooth wear</p>
+                                                            <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
+                                                                <option selected>Absent</option>
+                                                                <option value="2">Present</option>
+                                                              </select>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="small m-0 ">Missing tooth</p>
+                                                        <div class="row">
+                                                            <div class="col-6 p-0 m-0 mb-2">
+                                                                <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
+                                                                    <option selected>Absent</option>
+                                                                    <option value="2">Present</option>
+                                                                  </select>
+                                                            </div>
+                                                            <div class="col-6">
+            
+                                                                <div class="input-group mb-2">
+                                                                    <input type="text" class="form-control bg-light border-0 small" placeholder="Missing tooth number"
+                                                                        aria-label="Search" aria-describedby="basic-addon2">
+                                                                    <!-- <div class="input-group-append">
+                                                                        <button class="btn btn-white text-success" type="button">
+                                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                        </button>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <p class="small m-0 ">Non-vital tooth</p>
+                                                        <div class="row">
+                                                            <div class="col-6 p-0 m-0 mb-2">
+                                                                <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
+                                                                    <option selected>Absent</option>
+                                                                    <option value="2">Present</option>
+                                                                  </select>
+                                                            </div>
+                                                            <div class="col-6">
+            
+                                                                <div class="input-group mb-2">
+                                                                    <input type="text" class="form-control bg-light border-0 small" placeholder="Non-vital tooth number"
+                                                                        aria-label="Search" aria-describedby="basic-addon2">
+                                                                    <!-- <div class="input-group-append">
+                                                                        <button class="btn btn-white text-success" type="button">
+                                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                        </button>
+                                                                    </div> -->
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-6 p-0 mb-2">
+                                                                <p class="small m-0 pl-2">Crowding</p>
+                                                                <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
+                                                                    <option selected>Absent</option>
+                                                                    <option value="2">Present with respect to Lower-anterior / upper anterior.</option>
+                                                                    <option value="3">Left lower posterior region / left posterior upper region</option>
+                                                                    <option value="4">Right posterior upper region / Right posterior lower region</option>
+                                                                  </select>
+                                                            </div>
+                                                            <div class="col-6   mb-2">
+                                                                <p class="small m-0 pl-2">Spacing</p>
+                                                                <select class="form-select border-0 bg-light py-2 pl-2 w-100" style="outline: 0;" aria-label="Default select example">
+                                                                    <option selected>Absent</option>
+                                                                    <option value="2">Present with respect to Lower-anterior / upper anterior.</option>
+                                                                    <option value="2">Left lower posterior region / left posterior upper region</option>
+                                                                    <option value="2">Right posterior upper region / Right posterior lower region</option>
+                                                                  </select>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <br>
+                                                
+                                                <div>
+                                                    <input type="button" id="secbutt3" onclick="myFunction3()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                                    <input type="button" id="secbutt3a" onclick="myFunction3a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
+                                                             
+                                                        
+                                                </div>
+                                            </div>
+                                            <div id="step4">
+                                                <h1 class="h5 mb-3 text-gray-800">Emergency findings</h1>
+                                                <div class="input-group mb-2">
+                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Emergency findings"
+                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                    <!-- <div class="input-group-append">
+                                                        <button class="btn btn-white text-success" type="button">
+                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                        </button>
+                                                    </div> -->
+                                                </div>
+                                                
+                                                <div>
+                                                    <input type="button" id="secbutt4" onclick="myFunction4()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                                    <input type="button" id="secbutt4a" onclick="myFunction4a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
+                                                             
+                                                        
+                                                </div>
+                                            </div>
+                                            <div id="step5">
+                                                <h1 class="h5 mb-3 text-gray-800">Treatment plan</h1>
+                                                <div class="row">
+                                                        <div class="col-4 p-1">
+                                                            <p class="small m-0 mb-1 pl-2">Diagnosis</p>
+                                                            <div class="input-group mb-2">
+                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
+                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <p class="small m-0 mb-1 pl-2">Preventive care</p>
+                                                            <div class="input-group mb-2">
+                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
+                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <p class="small m-0 mb-1 pl-2">Patient referral</p>
+                                                            <div class="input-group mb-2">
+                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
+                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                <div>
+                                                    <input type="button" id="secbutt5" onclick="myFunction5()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                                    <input type="button" id="secbutt5a" onclick="myFunction5a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
+                                                             
+                                                        
+                                                </div>
+                                            </div>
+                                            <div id="step6">
+                                                <h1 class="h5 mb-3 text-gray-800">Doctor details</h1>
+                                                <div class="row">
+                                                        <div class="col-8">
+    
+                                                            <div class="input-group mb-2">
+                                                                <input type="text" class="form-control bg-light border-0 small" placeholder="Doctor name"
+                                                                    aria-label="Search" aria-describedby="basic-addon2">
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+    
+                                                            <div class="input-group mb-2">
+                                                                <input type="text" class="form-control bg-light border-0 small" placeholder="Registration ID"
+                                                                    aria-label="Search" aria-describedby="basic-addon2">
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                <div>
+                                                    <input type="button" id="secbutt6" onclick="myFunction6()" class="btn btn-primary mx-1 float-right m-0"  value="Preview form">
+                                                    <input type="button" id="secbutt6a" onclick="myFunction6a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
+                                                             
+                                                        
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div id="step7">
+                                                <div class="row pl-2">
+                                                        <div class="switch-field my-3">
+                                                            <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
+                                                            <label for="radio-one">Review</label>
+                                                            <input type="radio" id="radio-two" name="switch-one" value="no" />
+                                                            <label for="radio-two">Submit</label>
+                                                        </div>
+                                                    </div>
+                                                
+                                                <div>
+                                                    <input type="button" id="" onclick="myFunction6()" class="btn btn-success mx-1 float-right m-0"  value="Submit">
+                                                             
+                                                        
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Update</button>
-                                    </div>
+                                    <script>
+                                        function myFunction(){
+                                                var x= document.getElementById("step1");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step2");
+                                                y.style.display="block";
+                                            }
+                                            
+                                            </script>
+                                    <script>
+                                        function myFunction2(){
+                                                var x= document.getElementById("step2");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step3");
+                                                y.style.display="block";
+                                            }
+                                        
+    
+                                    </script>
+                                    <script>
+                                        function myFunction2a(){
+                                                var x= document.getElementById("step2");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step1");
+                                                y.style.display="block";
+                                            }
+                                    </script>
+                                    <script>
+                                        function myFunction3(){
+                                                var x= document.getElementById("step3");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step4");
+                                                y.style.display="block";
+                                            }
+                                        
+    
+                                    </script>
+                                    <script>
+                                        function myFunction3a(){
+                                                var x= document.getElementById("step3");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step2");
+                                                y.style.display="block";
+                                            }
+                                    </script>
+                                    <script>
+                                        function myFunction4(){
+                                                var x= document.getElementById("step4");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step5");
+                                                y.style.display="block";
+                                            }
+                                        
+    
+                                    </script>
+                                    <script>
+                                        function myFunction4a(){
+                                                var x= document.getElementById("step4");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step3");
+                                                y.style.display="block";
+                                            }
+                                    </script>
+                                    <script>
+                                        function myFunction5(){
+                                                var x= document.getElementById("step5");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step6");
+                                                y.style.display="block";
+                                            }
+                                        
+    
+                                    </script>
+                                    <script>
+                                        function myFunction5a(){
+                                                var x= document.getElementById("step5");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step4");
+                                                y.style.display="block";
+                                            }
+                                    </script>
+                                    <script>
+                                        function myFunction6a(){
+                                                var x= document.getElementById("step6");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step5");
+                                                y.style.display="block";
+                                            }
+                                    </script>
+                                    <script>
+                                        function myFunction6(){
+                                            var x= document.getElementById("step1");
+                                            x.style.display="block";
+                                            var y= document.getElementById("step2");
+                                            y.style.display="block";
+                                            var z= document.getElementById("step3");
+                                            z.style.display="block";
+                                            var a= document.getElementById("step4");
+                                            a.style.display="block";
+                                            var b= document.getElementById("step5");
+                                            b.style.display="block";
+                                            var c= document.getElementById("step6");
+                                            c.style.display="block";
+                                            var d= document.getElementById("step7");
+                                            d.style.display="block";
+                                            
+                                            var button = document.getElementById("secbutt1");
+                                            button.style.display="none";
+                                            var button2 = document.getElementById("secbutt2");
+                                            button2.style.display="none";
+                                            var button2a = document.getElementById("secbutt2a");
+                                            button2a.style.display="none";
+                                            var button3 = document.getElementById("secbutt3");
+                                            button3.style.display="none";
+                                            var button3a = document.getElementById("secbutt3a");
+                                            button3a.style.display="none";
+                                            var button4 = document.getElementById("secbutt4");
+                                            button4.style.display="none";
+                                            var button4a = document.getElementById("secbutt4a");
+                                            button4a.style.display="none";
+                                            var button5 = document.getElementById("secbutt5");
+                                            button5.style.display="none";
+                                            var button6 = document.getElementById("secbutt6");
+                                            button6.style.display="none";
+                                            var button5a = document.getElementById("secbutt5a");
+                                            button5a.style.display="none";
+                                            var button6a = document.getElementById("secbutt6a");
+                                            button6a.style.display="none";
+                                        }
+                                    </script>
                                 </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                        </div>
+                        <div class="col-md-6  ">
+                            <div class="card bg-light text-black shadow">
+                                        <div class="card-body">
+                                            <div class="card-body bg-white">
+                                            <div class="row mb-2">
+                                                <div class="col">
+                                                    <p class="small">Patient information</p>
+                                                    <a href="#" class="btn btn-info btn-circle btn-lg m-2" href="#" data-toggle="collapse" data-target="#patientinfo" aria-expanded="true" aria-controls="patientinfo">
+                                                        <i class="fas fa-info-circle"></i>
+                                                    </a>
+                                                    
+                                                </div>
+                                                
+                                                <div class="col-9">
+                                                    <p class="small">Annotate images</p>
+                                                    <div class="row">
+
+                                                        <a href="#" class="btn btn-dark btn-circle btn-lg m-2" data-toggle="modal" data-target="#exampleModal">
+                                                            <p class="m-auto font-weight-bold">1</p>
+                                                        </a>
+                                                        <a href="#" class="btn btn-dark btn-circle btn-lg m-2" data-toggle="modal" data-target="#exampleModal2">
+                                                            <p class="m-auto font-weight-bold">2</p>
+                                                        </a>
+                                                        <a href="#" class="btn btn-dark btn-circle btn-lg m-2" data-toggle="modal" data-target="#exampleModal3">
+                                                            <p class="m-auto font-weight-bold">3</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="patientinfo" class="collapse" aria-labelledby="headingPages"
+                                                    data-parent="#accordionSidebar">
+                                                    <br>
+                                                    <div class="bg-white py-2 collapse-inner rounded">
+                                                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                
+                                
+                                <tbody>
+                                    <tr>
+                                        <td><b>Gender</b></td>
+                                        <td>Irene</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Age</b></td>
+                                        <td>53</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Brushing Habits	</b></td>
+                                        <td>Once daily</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Tobacco Habits</b></td>
+                                        <td>No</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>What dental problems are you currently facing?</b></td>
+                                        <td>None</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Since how long have you been facing this problem?</b></td>
+                                        <td>I am not facing any problem.</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Rejection Count</b></td>
+                                        <td>0</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Last Reject remark</b></td>
+                                        <td>null</td>
+                                        
+                                    </tr>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                        <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605168565.jpg" alt="">
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Annotate here</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                            <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605169057.jpg" alt="">
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Update</button>
+                                            </div>
+                                        </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Update</button>
+                                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605168565.jpg" alt="">
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Update</button>
+                                            </div>
+                                        </div>
+                                        </div>
                                     </div>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+                                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605168880.jpg" alt="">
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Update</button>
+                                            </div>
+                                        </div>
+                                        </div>
                                     </div>
-                                    <div class="modal-body">
-                                        <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605168880.jpg" alt="">
-                                    </div>
-                                    <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Update</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
+                                <style>
+                                    .modal-dialog{
+                                        max-width: 50vw !important;
+                                    }
+                                    @media screen and (max-width: 992px) {
+                                    .modal-dialog{
+                                        max-width: 95vw !important;
+                                        margin: auto;
+                                        margin-top: 10px;
+                                    }
+                                    }
+                                </style>
+                            
                         </div>
                     </div>
                     
