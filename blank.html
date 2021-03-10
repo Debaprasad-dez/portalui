@@ -453,7 +453,7 @@
                                         </style>
                             <div class="card shadow mb-4">
                                     <div class="card-header py-3">
-                                        <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
+                                        <h6 class="m-0 font-weight-bold text-primary">Doctor's Analysis</h6>
                                     </div>
                                     <div class="card-body" style="height: 420px;overflow-y: scroll;">
                                         <form action="">
@@ -479,7 +479,6 @@
                                                     </div> -->
                                                 </div>
                                                 <div>
-                                                    <input type="button" id="secbutt1" onclick="myFunction()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
                                                              
                                                         
                                                 </div>
@@ -519,12 +518,7 @@
                                                         
                                                     </div>
                                                     <br>
-                                                <div>
-                                                    <input type="button" id="secbutt2" onclick="myFunction2()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                                    <input type="button" id="secbutt2a" onclick="myFunction2a()" class="btn btn-light mx-1 float-right m-0"  value="Previous step">
-                                                             
-                                                        
-                                                </div>
+                                                
                                             </div>
                                             <div id="step3">
                                                 <h1 class="h5 mb-3 text-gray-800">Teeth health</h1>
@@ -646,12 +640,7 @@
                                                     </div>
                                                     <br>
                                                 
-                                                <div>
-                                                    <input type="button" id="secbutt3" onclick="myFunction3()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                                    <input type="button" id="secbutt3a" onclick="myFunction3a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
-                                                             
-                                                        
-                                                </div>
+                                                
                                             </div>
                                             <div id="step4">
                                                 <h1 class="h5 mb-3 text-gray-800">Emergency findings</h1>
@@ -665,12 +654,7 @@
                                                     </div> -->
                                                 </div>
                                                 
-                                                <div>
-                                                    <input type="button" id="secbutt4" onclick="myFunction4()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                                    <input type="button" id="secbutt4a" onclick="myFunction4a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
-                                                             
-                                                        
-                                                </div>
+                               
                                             </div>
                                             <div id="step5">
                                                 <h1 class="h5 mb-3 text-gray-800">Treatment plan</h1>
@@ -713,12 +697,7 @@
                                                         </div>
                                                     </div>
                                                 
-                                                <div>
-                                                    <input type="button" id="secbutt5" onclick="myFunction5()" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                                    <input type="button" id="secbutt5a" onclick="myFunction5a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
-                                                             
-                                                        
-                                                </div>
+    
                                             </div>
                                             <div id="step6">
                                                 <h1 class="h5 mb-3 text-gray-800">Doctor details</h1>
@@ -749,31 +728,10 @@
                                                         </div>
                                                     </div>
                                                 
-                                                <div>
-                                                    <input type="button" id="secbutt6" onclick="myFunction6()" class="btn btn-primary mx-1 float-right m-0"  value="Preview form">
-                                                    <input type="button" id="secbutt6a" onclick="myFunction6a()" class="btn btn-light mx-1 float-right m-0"  value="previous step">
-                                                             
-                                                        
-                                                </div>
+                                                
                                             </div>
                                             <br>
-                                            <div id="step7">
-                                                <div>
-                                                    <input type="button" id="" onclick="myFunction6()" class="btn btn-success mx-1 float-right m-0"  value="Submit">
-                                                             
-                                                        
-                                                </div>
-                                                <div class="row pl-2">
-                                                        <div class="switch-field my-1">
-                                                            <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
-                                                            <label for="radio-one">Review</label>
-                                                            <input type="radio" id="radio-two" name="switch-one" value="no" />
-                                                            <label for="radio-two">Submit</label>
-                                                        </div>
-                                                    </div>
-                                                
-                                                
-                                            </div>
+                                            
                                         </form>
                                     </div>
                                     <script>
@@ -782,6 +740,10 @@
                                                 x.style.display="none";
                                                 var y= document.getElementById("step2");
                                                 y.style.display="block";
+                                                var z= document.getElementById("secbutt1");
+                                                z.style.display="none";
+                                                var a= document.getElementById("btngr1");
+                                                a.style.display="block";
                                             }
                                             
                                             </script>
@@ -791,6 +753,12 @@
                                                 x.style.display="none";
                                                 var y= document.getElementById("step3");
                                                 y.style.display="block";
+                                                var a= document.getElementById("btngr1");
+                                                a.style.display="none";
+                                                var b= document.getElementById("btngr2");
+                                                b.style.display="block";
+                                                var k= document.getElementById("step1");
+                                                k.style.display="none";
                                             }
                                         
     
@@ -801,6 +769,11 @@
                                                 x.style.display="none";
                                                 var y= document.getElementById("step1");
                                                 y.style.display="block";
+                                                var z= document.getElementById("secbutt1");
+                                                z.style.display="block";
+                                                var a= document.getElementById("btngr1");
+                                                a.style.display="none";
+                                                
                                             }
                                     </script>
                                     <script>
@@ -809,6 +782,10 @@
                                                 x.style.display="none";
                                                 var y= document.getElementById("step4");
                                                 y.style.display="block";
+                                                var a= document.getElementById("btngr2");
+                                                a.style.display="none";
+                                                var b= document.getElementById("btngr3");
+                                                b.style.display="block";
                                             }
                                         
     
@@ -819,6 +796,10 @@
                                                 x.style.display="none";
                                                 var y= document.getElementById("step2");
                                                 y.style.display="block";
+                                                var b= document.getElementById("btngr1");
+                                                b.style.display="block";
+                                                var a= document.getElementById("btngr2");
+                                                a.style.display="none";
                                             }
                                     </script>
                                     <script>
@@ -827,6 +808,10 @@
                                                 x.style.display="none";
                                                 var y= document.getElementById("step5");
                                                 y.style.display="block";
+                                                var a= document.getElementById("btngr3");
+                                                a.style.display="none";
+                                                var b= document.getElementById("btngr4");
+                                                b.style.display="block";
                                             }
                                         
     
@@ -837,6 +822,10 @@
                                                 x.style.display="none";
                                                 var y= document.getElementById("step3");
                                                 y.style.display="block";
+                                                var b= document.getElementById("btngr2");
+                                                b.style.display="block";
+                                                var a= document.getElementById("btngr3");
+                                                a.style.display="none";
                                             }
                                     </script>
                                     <script>
@@ -845,6 +834,10 @@
                                                 x.style.display="none";
                                                 var y= document.getElementById("step6");
                                                 y.style.display="block";
+                                                var a= document.getElementById("btngr4");
+                                                a.style.display="none";
+                                                var b= document.getElementById("btngr5");
+                                                b.style.display="block";
                                             }
                                         
     
@@ -855,6 +848,11 @@
                                                 x.style.display="none";
                                                 var y= document.getElementById("step4");
                                                 y.style.display="block";
+                                                var b= document.getElementById("btngr3");
+                                                b.style.display="block";
+                                                var a= document.getElementById("btngr4");
+                                                a.style.display="none";
+                                                
                                             }
                                     </script>
                                     <script>
@@ -863,10 +861,19 @@
                                                 x.style.display="none";
                                                 var y= document.getElementById("step5");
                                                 y.style.display="block";
+                                                var b= document.getElementById("btngr4");
+                                                b.style.display="block";
+                                                var a= document.getElementById("btngr5");
+                                                a.style.display="none";
+                                                
                                             }
                                     </script>
                                     <script>
                                         function myFunction6(){
+                                            var e= document.getElementById("btngr5");
+                                            e.style.display="none";
+                                            var e= document.getElementById("btngr6");
+                                            e.style.display="block";
                                             var x= document.getElementById("step1");
                                             x.style.display="block";
                                             var y= document.getElementById("step2");
@@ -882,53 +889,52 @@
                                             var d= document.getElementById("step7");
                                             d.style.display="block";
                                             
-                                            var button = document.getElementById("secbutt1");
-                                            button.style.display="none";
-                                            var button2 = document.getElementById("secbutt2");
-                                            button2.style.display="none";
-                                            var button2a = document.getElementById("secbutt2a");
-                                            button2a.style.display="none";
-                                            var button3 = document.getElementById("secbutt3");
-                                            button3.style.display="none";
-                                            var button3a = document.getElementById("secbutt3a");
-                                            button3a.style.display="none";
-                                            var button4 = document.getElementById("secbutt4");
-                                            button4.style.display="none";
-                                            var button4a = document.getElementById("secbutt4a");
-                                            button4a.style.display="none";
-                                            var button5 = document.getElementById("secbutt5");
-                                            button5.style.display="none";
-                                            var button6 = document.getElementById("secbutt6");
-                                            button6.style.display="none";
-                                            var button5a = document.getElementById("secbutt5a");
-                                            button5a.style.display="none";
-                                            var button6a = document.getElementById("secbutt6a");
-                                            button6a.style.display="none";
+                                            
+                                              
+                                            
+                                            
+                                            
+                                           
                                         }
                                     </script>
-                                    <div class="card-header py-3">
+                                    <div class="card-header bg-white py-3 shadow">
                                         <div>
-                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                            <input type="button" id="secbutt1" onclick="myFunction()" class="btn btn-primary mx-1 float-right m-0"  value="First next button">
                                         </div>
                                         <div id="btngr1">
-                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                            <input type="button" id="" onclick="" class="btn btn-light mx-1 float-right m-0"  value="Previous step"> 
+                                            <input type="button" id="secbutt2" onclick="myFunction2()" class="btn btn-primary mx-1 float-right m-0"  value="Second next button">
+                                            <input type="button" id="secbutt2a" onclick="myFunction2a()" class="btn btn-light mx-1 float-right m-0"  value="First Previous step"> 
                                         </div>
                                         <div id="btngr2">
-                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                            <input type="button" id="" onclick="" class="btn btn-light mx-1 float-right m-0"  value="Previous step"> 
+                                            <input type="button" id="secbutt3" onclick="myFunction3()" class="btn btn-primary mx-1 float-right m-0"  value="Third next button">
+                                            <input type="button" id="secbutt3a" onclick="myFunction3a()" class="btn btn-light mx-1 float-right m-0"  value="Second Previous step"> 
                                         </div>
                                         <div id="btngr3">
-                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                            <input type="button" id="" onclick="" class="btn btn-light mx-1 float-right m-0"  value="Previous step"> 
+                                            <input type="button" id="secbutt4" onclick="myFunction4()" class="btn btn-primary mx-1 float-right m-0"  value="Fourth next button">
+                                            <input type="button" id="secbutt4a" onclick="myFunction4a()" class="btn btn-light mx-1 float-right m-0"  value="Third Previous step"> 
                                         </div>
                                         <div id="btngr4">
-                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                            <input type="button" id="" onclick="" class="btn btn-light mx-1 float-right m-0"  value="Previous step"> 
+                                            <input type="button" id="secbutt5" onclick="myFunction5()" class="btn btn-primary mx-1 float-right m-0"  value="Fifth next button">
+                                            <input type="button" id="secbutt5a" onclick="myFunction5a()" class="btn btn-light mx-1 float-right m-0"  value="Fourth Previous step"> 
                                         </div>
                                         <div id="btngr5">
-                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
-                                            <input type="button" id="" onclick="" class="btn btn-light mx-1 float-right m-0"  value="Previous step"> 
+                                            <input type="button" id="secbutt6" onclick="myFunction6()" class="btn btn-primary mx-1 float-right m-0"  value="Preview form">
+                                            <input type="button" id="secbutt6a" onclick="myFunction6a()" class="btn btn-light mx-1 float-right m-0"  value="Fifth Previous step"> 
+                                        </div>
+                                        <div id="btngr6">
+<div>
+                                                    <input type="button" id="" onclick="" class="btn btn-success mx-1 float-right m-0"  value="Submit">
+                                                             
+                                                        
+                                                </div>
+                                                <div class="row pl-2">
+                                                        <div class="switch-field my-1">
+                                                            <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
+                                                            <label for="radio-one">Review</label>
+                                                            <input type="radio" id="radio-two" name="switch-one" value="no" />
+                                                            <label for="radio-two">Submit</label>
+                                                        </div>
+                                                </div>                                        
                                         </div>
                                     </div>
                                 </div>
