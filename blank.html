@@ -349,12 +349,33 @@
                 <!-- End of Topbar -->
                 
                 <!-- Begin Page Content -->
-                <div class="container-fluid px-1">
-                    <h1 class="h3 mb-3 text-gray-800 ml-2">Doctors Report</h1>
+                <div class="container-fluid px-1" >
+                    <div class="row mb-2" >
+                        <div class="col">
+
+                            <h1 class="h3  mt-2 text-gray-800  pl-2">Doctors Report</h1>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="row my-auto p-0 ">
+                                <a href="#" class="btn btn-info btn-circle  m-2" href="#" data-toggle="collapse" data-target="#patientinfo" aria-expanded="true" aria-controls="patientinfo">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                                <a href="#" class="btn btn-dark btn-circle  m-2" data-toggle="modal" data-target="#exampleModal">
+                                    <p class="m-auto font-weight-bold">1</p>
+                                </a>
+                                <a href="#" class="btn btn-dark btn-circle  m-2" data-toggle="modal" data-target="#exampleModal2">
+                                    <p class="m-auto font-weight-bold">2</p>
+                                </a>
+                                <a href="#" class="btn btn-dark btn-circle  m-2" data-toggle="modal" data-target="#exampleModal3">
+                                    <p class="m-auto font-weight-bold">3</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Page Heading -->
                     <div class="row p-0 m-0">
 
-                        <div class="col-md-6 ">
+                        <div class="col-md-12 ">
                             <style>
                                 #step1{
                                     display: block;
@@ -375,6 +396,9 @@
                                     display: none;
                                 }
                                 #step7{
+                                    display: none;
+                                }
+                                #btngr1,#btngr2,#btngr3,#btngr4,#btngr5,#btngr6{
                                     display: none;
                                 }
                             </style>
@@ -431,7 +455,7 @@
                                     <div class="card-header py-3">
                                         <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
                                     </div>
-                                    <div class="card-body">
+                                    <div class="card-body" style="height: 420px;overflow-y: scroll;">
                                         <form action="">
     
                                             <div id="step1">
@@ -882,37 +906,38 @@
                                             button6a.style.display="none";
                                         }
                                     </script>
+                                    <div class="card-header py-3">
+                                        <div>
+                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                        </div>
+                                        <div id="btngr1">
+                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                            <input type="button" id="" onclick="" class="btn btn-light mx-1 float-right m-0"  value="Previous step"> 
+                                        </div>
+                                        <div id="btngr2">
+                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                            <input type="button" id="" onclick="" class="btn btn-light mx-1 float-right m-0"  value="Previous step"> 
+                                        </div>
+                                        <div id="btngr3">
+                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                            <input type="button" id="" onclick="" class="btn btn-light mx-1 float-right m-0"  value="Previous step"> 
+                                        </div>
+                                        <div id="btngr4">
+                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                            <input type="button" id="" onclick="" class="btn btn-light mx-1 float-right m-0"  value="Previous step"> 
+                                        </div>
+                                        <div id="btngr5">
+                                            <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="next step">
+                                            <input type="button" id="" onclick="" class="btn btn-light mx-1 float-right m-0"  value="Previous step"> 
+                                        </div>
+                                    </div>
                                 </div>
                         </div>
                         <div class="col-md-6  ">
-                            <div class="card bg-light text-black shadow">
+                            <!-- <div class="card bg-light text-black shadow">
                                         <div class="card-body">
                                             <div class="card-body bg-white">
-                                            <div class="row mb-2">
-                                                <div class="col">
-                                                    <p class="small">Patient information</p>
-                                                    <a href="#" class="btn btn-info btn-circle btn-lg m-2" href="#" data-toggle="collapse" data-target="#patientinfo" aria-expanded="true" aria-controls="patientinfo">
-                                                        <i class="fas fa-info-circle"></i>
-                                                    </a>
-                                                    
-                                                </div>
-                                                
-                                                <div class="col-9">
-                                                    <p class="small">Annotate images</p>
-                                                    <div class="row">
-
-                                                        <a href="#" class="btn btn-dark btn-circle btn-lg m-2" data-toggle="modal" data-target="#exampleModal">
-                                                            <p class="m-auto font-weight-bold">1</p>
-                                                        </a>
-                                                        <a href="#" class="btn btn-dark btn-circle btn-lg m-2" data-toggle="modal" data-target="#exampleModal2">
-                                                            <p class="m-auto font-weight-bold">2</p>
-                                                        </a>
-                                                        <a href="#" class="btn btn-dark btn-circle btn-lg m-2" data-toggle="modal" data-target="#exampleModal3">
-                                                            <p class="m-auto font-weight-bold">3</p>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            
                                             <div id="patientinfo" class="collapse" aria-labelledby="headingPages"
                                                     data-parent="#accordionSidebar">
                                                     <br>
@@ -975,7 +1000,7 @@
                                             
                                         </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                         <div class="modal-content">
