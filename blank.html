@@ -390,6 +390,9 @@
                                 #step4{
                                     display: none;
                                 }
+                                #step4x{
+                                    display: none;
+                                }
                                 #step5{
                                     display: none;
                                 }
@@ -399,7 +402,16 @@
                                 #step7{
                                     display: none;
                                 }
-                                #btngr1,#btngr2,#btngr3,#btngr4,#btngr5,#btngr6{
+                                #step8{
+                                    display: none;
+                                }
+                                #step9{
+                                    display: none;
+                                }
+                                #step10{
+                                    display: none;
+                                }
+                                #btngr1,#btngr2,#btngr3,#btngr3x,#btngr4,#btngr5,#btngr6,#btngr7,#btngr8,#btngr9,#btngrlast{
                                     display: none;
                                 }
                             </style>
@@ -543,9 +555,14 @@
                                                 <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="Update">
                                                 <br>
                                                 <br>
-                                                <h1 class="h5 mb-3 text-gray-800">Emergency findings</h1>
+                                                
+                                                
+                               
+                                            </div>
+                                            <div id="step4x">
+                                                <h1 class="h5 mb-3 text-gray-800">History</h1>
                                                 <div class="input-group mb-2">
-                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Emergency findings"
+                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Medical History"
                                                         aria-label="Search" aria-describedby="basic-addon2"></textarea>
                                                     <!-- <div class="input-group-append">
                                                         <button class="btn btn-white text-success" type="button">
@@ -553,6 +570,17 @@
                                                         </button>
                                                     </div> -->
                                                 </div>
+                                                <div class="input-group mb-2">
+                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Dental History"
+                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                    <!-- <div class="input-group-append">
+                                                        <button class="btn btn-white text-success" type="button">
+                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                        </button>
+                                                    </div> -->
+                                                </div>
+                                                <br>
+                                                
                                                 
                                
                                             </div>
@@ -592,45 +620,7 @@
                                                     </div>
                                                     <br>
                                                     <br>
-                                                <h1 class="h5 mb-3 text-gray-800">Treatment plan</h1>
-                                                <div class="row p-2">
-                                                        <div class="col-4 p-1">
-                                                            <p class="small m-0 mb-1 pl-2">Diagnosis</p>
-                                                            <div class="input-group mb-2">
-                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
-                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                                <!-- <div class="input-group-append">
-                                                                    <button class="btn btn-white text-success" type="button">
-                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                    </button>
-                                                                </div> -->
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4 p-1">
-                                                            <p class="small m-0 mb-1 pl-2">Preventive care</p>
-                                                            <div class="input-group mb-2">
-                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
-                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                                <!-- <div class="input-group-append">
-                                                                    <button class="btn btn-white text-success" type="button">
-                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                    </button>
-                                                                </div> -->
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4 p-1">
-                                                            <p class="small m-0 mb-1 pl-2">Patient referral</p>
-                                                            <div class="input-group mb-2">
-                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
-                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                                <!-- <div class="input-group-append">
-                                                                    <button class="btn btn-white text-success" type="button">
-                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                    </button>
-                                                                </div> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                
                                                 
     
                                             </div>
@@ -752,7 +742,71 @@
                                                             
                                                         </div>
                                                     </div>
-                                                    <br>
+                                              
+                                                
+                                                
+                                            </div>
+                                            <div id="step7">
+                                                
+                                                <h1 class="h5 mb-3 text-gray-800">Emergency findings</h1>
+                                                <div class="input-group mb-2">
+                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Emergency findings"
+                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                    <!-- <div class="input-group-append">
+                                                        <button class="btn btn-white text-success" type="button">
+                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                        </button>
+                                                    </div> -->
+                                                </div>
+                                                
+                                                
+                                            </div>
+                                            <div id="step8">
+                                                
+                                                <h1 class="h5 mb-3 text-gray-800">Treatment plan</h1>
+                                                <div class="row p-2">
+                                                        <div class="col-4 p-1">
+                                                            <p class="small m-0 mb-1 pl-2">Diagnosis</p>
+                                                            <div class="input-group mb-2">
+                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
+                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <p class="small m-0 mb-1 pl-2">Preventive care</p>
+                                                            <div class="input-group mb-2">
+                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
+                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <p class="small m-0 mb-1 pl-2">Patient referral</p>
+                                                            <div class="input-group mb-2">
+                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
+                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                
+                                                
+                                            </div>
+                                            <div id="step9">
+                                                
                                                 <h1 class="h5 mb-3 text-gray-800">Doctor details</h1>
                                                 <div class="row">
                                                         <div class="col-8">
@@ -859,11 +913,11 @@
                                         function myFunction4(){
                                                 var x= document.getElementById("step4");
                                                 x.style.display="none";
-                                                var y= document.getElementById("step5");
+                                                var y= document.getElementById("step4x");
                                                 y.style.display="block";
                                                 var a= document.getElementById("btngr3");
                                                 a.style.display="none";
-                                                var b= document.getElementById("btngr4");
+                                                var b= document.getElementById("btngr3x");
                                                 b.style.display="block";
                                             }
                                         
@@ -878,6 +932,32 @@
                                                 var b= document.getElementById("btngr2");
                                                 b.style.display="block";
                                                 var a= document.getElementById("btngr3");
+                                                a.style.display="none";
+                                            }
+                                    </script>
+                                     <script>
+                                        function myFunction4x(){
+                                            var a= document.getElementById("btngr3x");
+                                            a.style.display="none";
+                                            var b= document.getElementById("btngr4");
+                                            b.style.display="block";
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step5");
+                                                y.style.display="block";
+                                            }
+                                        
+    
+                                    </script>
+                                    <script>
+                                        function myFunction4xa(){
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step4");
+                                                y.style.display="block";
+                                                var b= document.getElementById("btngr3");
+                                                b.style.display="block";
+                                                var a= document.getElementById("btngr3x");
                                                 a.style.display="none";
                                             }
                                     </script>
@@ -899,14 +979,28 @@
                                         function myFunction5a(){
                                                 var x= document.getElementById("step5");
                                                 x.style.display="none";
-                                                var y= document.getElementById("step4");
+                                                var y= document.getElementById("step4x");
                                                 y.style.display="block";
-                                                var b= document.getElementById("btngr3");
+                                                var b= document.getElementById("btngr3x");
                                                 b.style.display="block";
                                                 var a= document.getElementById("btngr4");
                                                 a.style.display="none";
                                                 
                                             }
+                                    </script>
+                                    <script>
+                                        function myFunction6(){
+                                                var x= document.getElementById("step6");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step7");
+                                                y.style.display="block";
+                                                var a= document.getElementById("btngr5");
+                                                a.style.display="none";
+                                                var b= document.getElementById("btngr6");
+                                                b.style.display="block";
+                                            }
+                                        
+    
                                     </script>
                                     <script>
                                         function myFunction6a(){
@@ -922,10 +1016,79 @@
                                             }
                                     </script>
                                     <script>
-                                        function myFunction6(){
+                                        function myFunction7(){
+                                                var x= document.getElementById("step7");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step8");
+                                                y.style.display="block";
+                                                var a= document.getElementById("btngr6");
+                                                a.style.display="none";
+                                                var b= document.getElementById("btngr7");
+                                                b.style.display="block";
+                                            }
+                                        
+    
+                                    </script>
+                                    <script>
+                                        function myFunction7a(){
+                                                var x= document.getElementById("step7");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step6");
+                                                y.style.display="block";
+                                                var b= document.getElementById("btngr5");
+                                                b.style.display="block";
+                                                var a= document.getElementById("btngr6");
+                                                a.style.display="none";
+                                                
+                                            }
+                                    </script>
+                                    <script>
+                                        function myFunction8(){
+                                                var x= document.getElementById("step8");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step9");
+                                                y.style.display="block";
+                                                var a= document.getElementById("btngr7");
+                                                a.style.display="none";
+                                                var b= document.getElementById("btngr8");
+                                                b.style.display="block";
+                                            }
+                                        
+    
+                                    </script>
+                                    <script>
+                                        function myFunction8a(){
+                                                var x= document.getElementById("step8");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step7");
+                                                y.style.display="block";
+                                                var b= document.getElementById("btngr6");
+                                                b.style.display="block";
+                                                var a= document.getElementById("btngr7");
+                                                a.style.display="none";
+                                                
+                                            }
+                                    </script>
+                                    <script>
+                                        function myFunction9a(){
+                                                var x= document.getElementById("step9");
+                                                x.style.display="none";
+                                                var y= document.getElementById("step8");
+                                                y.style.display="block";
+                                                var b= document.getElementById("btngr7");
+                                                b.style.display="block";
+                                                var a= document.getElementById("btngr8");
+                                                a.style.display="none";
+                                                
+                                            }
+                                    </script>
+                                    <script>
+                                        function myFunction9(){
+                                            var f= document.getElementById("btngr8");
+                                            f.style.display="none";
                                             var e= document.getElementById("btngr5");
                                             e.style.display="none";
-                                            var e= document.getElementById("btngr6");
+                                            var e= document.getElementById("btngrlast");
                                             e.style.display="block";
                                             var x= document.getElementById("step1");
                                             x.style.display="block";
@@ -952,29 +1115,49 @@
                                     </script>
                                     <div class="card-header bg-white py-3 shadow">
                                         <div>
-                                            <input type="button" id="secbutt1" onclick="myFunction()" class="btn btn-primary mx-1 float-right m-0"  value="next">
+                                            <input type="button" id="secbutt1" onclick="myFunction()" class="btn btn-primary mx-1 float-right m-0"  value="next 1">
                                         </div>
                                         <div id="btngr1">
-                                            <input type="button" id="secbutt2" onclick="myFunction2()" class="btn btn-primary mx-1 float-right m-0"  value="next">
-                                            <input type="button" id="secbutt2a" onclick="myFunction2a()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
+                                            <input type="button" id="secbutt2" onclick="myFunction2()" class="btn btn-primary mx-1 float-right m-0"  value="next 2">
+                                            <input type="button" id="secbutt2a" onclick="myFunction2a()" class="btn btn-light mx-1 float-right m-0"  value="previous 2"> 
                                         </div>
                                         <div id="btngr2">
-                                            <input type="button" id="secbutt3" onclick="myFunction3()" class="btn btn-primary mx-1 float-right m-0"  value="next">
-                                            <input type="button" id="secbutt3a" onclick="myFunction3a()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
+                                            <input type="button" id="secbutt3" onclick="myFunction3()" class="btn btn-primary mx-1 float-right m-0"  value="next 3">
+                                            <input type="button" id="secbutt3a" onclick="myFunction3a()" class="btn btn-light mx-1 float-right m-0"  value="previous 3"> 
                                         </div>
                                         <div id="btngr3">
-                                            <input type="button" id="secbutt4" onclick="myFunction4()" class="btn btn-primary mx-1 float-right m-0"  value="next">
-                                            <input type="button" id="secbutt4a" onclick="myFunction4a()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
+                                            <input type="button" id="secbutt4" onclick="myFunction4()" class="btn btn-primary mx-1 float-right m-0"  value="next 4">
+                                            <input type="button" id="secbutt4a" onclick="myFunction4a()" class="btn btn-light mx-1 float-right m-0"  value="previous 4"> 
+                                        </div>
+                                        <div id="btngr3x">
+                                            <input type="button" id="secbutt4" onclick="myFunction4x()" class="btn btn-primary mx-1 float-right m-0"  value="next 4x">
+                                            <input type="button" id="secbutt4a" onclick="myFunction4xa()" class="btn btn-light mx-1 float-right m-0"  value="previous 4x"> 
                                         </div>
                                         <div id="btngr4">
-                                            <input type="button" id="secbutt5" onclick="myFunction5()" class="btn btn-primary mx-1 float-right m-0"  value="next">
-                                            <input type="button" id="secbutt5a" onclick="myFunction5a()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
+                                            <input type="button" id="secbutt5" onclick="myFunction5()" class="btn btn-primary mx-1 float-right m-0"  value="next 5">
+                                            <input type="button" id="secbutt5a" onclick="myFunction5a()" class="btn btn-light mx-1 float-right m-0"  value="previous 5"> 
                                         </div>
                                         <div id="btngr5">
-                                            <input type="button" id="secbutt6" onclick="myFunction6()" class="btn btn-primary mx-1 float-right m-0"  value="next">
-                                            <input type="button" id="secbutt6a" onclick="myFunction6a()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
+                                            <input type="button" id="secbutt6" onclick="myFunction6()" class="btn btn-primary mx-1 float-right m-0"  value="next 6">
+                                            <input type="button" id="secbutt6a" onclick="myFunction6a()()" class="btn btn-light mx-1 float-right m-0"  value="previous 6"> 
                                         </div>
                                         <div id="btngr6">
+                                            <input type="button" id="secbuttlast" onclick="myFunction7()" class="btn btn-primary mx-1 float-right m-0"  value="next 7">
+                                            <input type="button" id="secbuttlasta" onclick="myFunction7a()()" class="btn btn-light mx-1 float-right m-0"  value="previous 7"> 
+                                        </div>
+                                        <div id="btngr7">
+                                            <input type="button" id="secbuttlast" onclick="myFunction8()" class="btn btn-primary mx-1 float-right m-0"  value="next 8">
+                                            <input type="button" id="secbuttlasta" onclick="myFunction8a()()" class="btn btn-light mx-1 float-right m-0"  value="previous 8"> 
+                                        </div>
+                                        <div id="btngr8">
+                                            <input type="button" id="secbuttlast" onclick="myFunction9()" class="btn btn-primary mx-1 float-right m-0"  value="preview">
+                                            <input type="button" id="secbuttlasta" onclick="myFunction9a()()" class="btn btn-light mx-1 float-right m-0"  value="previous 9"> 
+                                        </div>
+                                        <div id="btngr9">
+                                            <input type="button" id="secbuttlast" onclick="myFunctionlast()" class="btn btn-primary mx-1 float-right m-0"  value="next 10">
+                                            <input type="button" id="secbuttlasta" onclick="myFunctionlasta()()" class="btn btn-light mx-1 float-right m-0"  value="previous 10"> 
+                                        </div>
+                                        <div id="btngrlast">
 <div>
                                                     <input type="button" id="" onclick="" class="btn btn-success mx-1 float-right m-0"  value="Submit">
                                                              
