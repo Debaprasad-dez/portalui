@@ -360,6 +360,7 @@
                                 <a href="#" class="btn btn-info btn-circle  m-2" href="#" data-toggle="collapse" data-target="#patientinfo" aria-expanded="true" aria-controls="patientinfo">
                                     <i class="fas fa-info-circle"></i>
                                 </a>
+                                
                                 <a href="#" class="btn btn-dark btn-circle  m-2" data-toggle="modal" data-target="#exampleModal">
                                     <p class="m-auto font-weight-bold">1</p>
                                 </a>
@@ -461,31 +462,101 @@
                                         <form action="">
     
                                             <div id="step1">
-                                                <h1 class="h5 mb-3 text-gray-800">History</h1>
-                                                <div class="input-group mb-2">
-                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Dental history"
-                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                    <!-- <div class="input-group-append">
-                                                        <button class="btn btn-white text-success" type="button">
-                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                        </button>
-                                                    </div> -->
-                                                </div>
-                                                <div class="input-group mb-2">
-                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Medical history"
-                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                    <!-- <div class="input-group-append">
-                                                        <button class="btn btn-white text-success" type="button">
-                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                        </button>
-                                                    </div> -->
-                                                </div>
-                                                <div>
-                                                             
-                                                        
-                                                </div>
+                                                <h1 class="h5 mb-3 text-gray-800">Patient information</h1>
+                                                <div class="bg-white py-2 collapse-inner rounded">
+                                                        <div class="table-responsive">
+                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                
+                                
+                                <tbody>
+                                    <tr>
+                                        <td><b>Gender</b></td>
+                                        <td>Female</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Age</b></td>
+                                        <td>53</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Brushing Habits	</b></td>
+                                        <td>Once daily</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Tobacco Habits</b></td>
+                                        <td>No</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>What dental problems are you currently facing?</b></td>
+                                        <td>None</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Since how long have you been facing this problem?</b></td>
+                                        <td>I am not facing any problem.</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Rejection Count</b></td>
+                                        <td>0</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><b>Last Reject remark</b></td>
+                                        <td>null</td>
+                                        
+                                    </tr>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                                                    </div>
                                             </div>
                                             <div id="step2">
+                                                <h1 class="h5 mb-3 text-gray-800">Annotate image 1</h1>
+                                                <img src="img/annotate1.jpeg" class="w-100 mb-2" alt="">
+                                                <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="Update">
+                                                <br>
+                                                <br>
+                                                
+                                                
+                                            </div>
+                                            <div id="step3">
+                                                <h1 class="h5 mb-3 text-gray-800">Annotate image 2</h1>
+                                                <img src="img/annotate2.jpeg" class="w-100 mb-2" alt="">
+                                                <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="Update">
+                                                <br>
+                                                <br>
+                                                
+                                                
+                                            </div>
+                                            <div id="step4">
+                                                <h1 class="h5 mb-3 text-gray-800">Annotate image 3</h1>
+                                                <img src="img/annotate3.jpeg" class="w-100 mb-2" alt="">
+                                                <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="Update">
+                                                <br>
+                                                <br>
+                                                <h1 class="h5 mb-3 text-gray-800">Emergency findings</h1>
+                                                <div class="input-group mb-2">
+                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Emergency findings"
+                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                    <!-- <div class="input-group-append">
+                                                        <button class="btn btn-white text-success" type="button">
+                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                        </button>
+                                                    </div> -->
+                                                </div>
+                                                
+                               
+                                            </div>
+                                            <div id="step5">
                                                 <h1 class="h5 mb-3 text-gray-800">Gum health</h1>
                                                 <div class="row mt-2">
                                                         <div class="col-4">
@@ -520,9 +591,50 @@
                                                         
                                                     </div>
                                                     <br>
+                                                    <br>
+                                                <h1 class="h5 mb-3 text-gray-800">Treatment plan</h1>
+                                                <div class="row p-2">
+                                                        <div class="col-4 p-1">
+                                                            <p class="small m-0 mb-1 pl-2">Diagnosis</p>
+                                                            <div class="input-group mb-2">
+                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
+                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <p class="small m-0 mb-1 pl-2">Preventive care</p>
+                                                            <div class="input-group mb-2">
+                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
+                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 p-1">
+                                                            <p class="small m-0 mb-1 pl-2">Patient referral</p>
+                                                            <div class="input-group mb-2">
+                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
+                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
+                                                                <!-- <div class="input-group-append">
+                                                                    <button class="btn btn-white text-success" type="button">
+                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
+                                                                    </button>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 
+    
                                             </div>
-                                            <div id="step3">
+                                            <div id="step6">
                                                 <h1 class="h5 mb-3 text-gray-800">Teeth health</h1>
                                                 <div class="row p-0 m-0">
     
@@ -641,67 +753,6 @@
                                                         </div>
                                                     </div>
                                                     <br>
-                                                
-                                                
-                                            </div>
-                                            <div id="step4">
-                                                <h1 class="h5 mb-3 text-gray-800">Emergency findings</h1>
-                                                <div class="input-group mb-2">
-                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Emergency findings"
-                                                        aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                    <!-- <div class="input-group-append">
-                                                        <button class="btn btn-white text-success" type="button">
-                                                            <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                        </button>
-                                                    </div> -->
-                                                </div>
-                                                
-                               
-                                            </div>
-                                            <div id="step5">
-                                                <h1 class="h5 mb-3 text-gray-800">Treatment plan</h1>
-                                                <div class="row p-2">
-                                                        <div class="col-4 p-1">
-                                                            <p class="small m-0 mb-1 pl-2">Diagnosis</p>
-                                                            <div class="input-group mb-2">
-                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
-                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                                <!-- <div class="input-group-append">
-                                                                    <button class="btn btn-white text-success" type="button">
-                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                    </button>
-                                                                </div> -->
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4 p-1">
-                                                            <p class="small m-0 mb-1 pl-2">Preventive care</p>
-                                                            <div class="input-group mb-2">
-                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
-                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                                <!-- <div class="input-group-append">
-                                                                    <button class="btn btn-white text-success" type="button">
-                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                    </button>
-                                                                </div> -->
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-4 p-1">
-                                                            <p class="small m-0 mb-1 pl-2">Patient referral</p>
-                                                            <div class="input-group mb-2">
-                                                                <textarea type="text" class="form-control bg-light border-0 small" placeholder="Root stumps description"
-                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                                <!-- <div class="input-group-append">
-                                                                    <button class="btn btn-white text-success" type="button">
-                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                    </button>
-                                                                </div> -->
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                
-    
-                                            </div>
-                                            <div id="step6">
                                                 <h1 class="h5 mb-3 text-gray-800">Doctor details</h1>
                                                 <div class="row">
                                                         <div class="col-8">
@@ -941,145 +992,7 @@
                                     </div>
                                 </div>
                         </div>
-                        <div class="col-md-6  ">
-                            <!-- <div class="card bg-light text-black shadow">
-                                        <div class="card-body">
-                                            <div class="card-body bg-white">
-                                            
-                                            <div id="patientinfo" class="collapse" aria-labelledby="headingPages"
-                                                    data-parent="#accordionSidebar">
-                                                    <br>
-                                                    <div class="bg-white py-2 collapse-inner rounded">
-                                                        <div class="table-responsive">
-                            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                
-                                
-                                <tbody>
-                                    <tr>
-                                        <td><b>Gender</b></td>
-                                        <td>Irene</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td><b>Age</b></td>
-                                        <td>53</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td><b>Brushing Habits	</b></td>
-                                        <td>Once daily</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td><b>Tobacco Habits</b></td>
-                                        <td>No</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td><b>What dental problems are you currently facing?</b></td>
-                                        <td>None</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td><b>Since how long have you been facing this problem?</b></td>
-                                        <td>I am not facing any problem.</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td><b>Rejection Count</b></td>
-                                        <td>0</td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td><b>Last Reject remark</b></td>
-                                        <td>null</td>
-                                        
-                                    </tr>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                                                    </div>
-                                                </div>
-                                            
-                                        </div>
-                                        </div>
-                                    </div> -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Annotate here</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                            </div>
-                                            <div class="modal-body">
-                                            <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605169057.jpg" alt="">
-                                            </div>
-                                            <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Update</button>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Annotate here</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605168565.jpg" alt="">
-                                            </div>
-                                            <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Update</button>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">Annotate here</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <img class="w-100" src="https://portal.logy.ai/media/original_analysed_images/telegram-1605168880.jpg" alt="">
-                                            </div>
-                                            <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Update</button>
-                                            </div>
-                                        </div>
-                                        </div>
-                                    </div>
-                                <style>
-                                    .modal-dialog{
-                                        max-width: 50vw !important;
-                                    }
-                                    @media screen and (max-width: 992px) {
-                                    .modal-dialog{
-                                        max-width: 95vw !important;
-                                        margin: auto;
-                                        margin-top: 10px;
-                                    }
-                                    }
-                                </style>
-                            
-                        </div>
+                        
                     </div>
                     
                 </div>
