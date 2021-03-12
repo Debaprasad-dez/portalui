@@ -357,18 +357,18 @@
                         </div>
                         <div class="col-md-3">
                             <div class="row my-auto p-0 ml-auto">
-                                <a href="#" class="btn btn-info btn-circle  m-2" href="#" data-toggle="collapse" data-target="#patientinfo" aria-expanded="true" aria-controls="patientinfo">
+                                <a href="#" class="btn btn-info btn-circle  m-2" onclick="dropinfo()" href="#" >
                                     <i class="fas fa-info-circle"></i>
                                 </a>
                                 
-                                <a href="#" class="btn btn-dark btn-circle  m-2" data-toggle="modal" data-target="#exampleModal">
-                                    <p class="m-auto font-weight-bold">1</p>
+                                <a href="#" class="btn btn-dark btn-circle  m-2" style="background: url(img/annotate1.jpeg);background-size: cover;" onclick="dropimage1()">
+                                    <p class="m-auto font-weight-bold invisible">1</p>
                                 </a>
-                                <a href="#" class="btn btn-dark btn-circle  m-2" data-toggle="modal" data-target="#exampleModal2">
-                                    <p class="m-auto font-weight-bold">2</p>
+                                <a href="#" class="btn btn-dark btn-circle  m-2" style="background: url(img/annotate2.jpeg);background-size: cover;" onclick="dropimage2()">
+                                    <p class="m-auto font-weight-bold invisible">2</p>
                                 </a>
-                                <a href="#" class="btn btn-dark btn-circle  m-2" data-toggle="modal" data-target="#exampleModal3">
-                                    <p class="m-auto font-weight-bold">3</p>
+                                <a href="#" class="btn btn-dark btn-circle  m-2" style="background: url(img/annotate3.jpeg);background-size: cover;" onclick="dropimage3()">
+                                    <p class="m-auto font-weight-bold invisible">3</p>
                                 </a>
                             </div>
                         </div>
@@ -408,9 +408,7 @@
                                 #step9{
                                     display: none;
                                 }
-                                #step10{
-                                    display: none;
-                                }
+      
                                 #btngr1,#btngr2,#btngr3,#btngr3x,#btngr4,#btngr5,#btngr6,#btngr7,#btngr8,#btngr9,#btngrlast{
                                     display: none;
                                 }
@@ -468,7 +466,517 @@
                                         </style>
                             <div class="card shadow mb-4">
                                     <div class="card-header py-3">
-                                        <h6 class="m-0 font-weight-bold text-primary">Doctor's Analysis</h6>
+                                        <div class = "btn-group float-right">
+                                            <script>
+                                                function drophistory(){
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="block";
+                                                var y= document.getElementById("btngr3x");
+                                                y.style.display="block";
+                                                var a= document.getElementById("step1");
+                                                a.style.display="none";
+                                                var b= document.getElementById("step2");
+                                                b.style.display="none";
+                                                var c= document.getElementById("step3");
+                                                c.style.display="none";
+                                                var d= document.getElementById("step4");
+                                                d.style.display="none";
+                                                var e= document.getElementById("step5");
+                                                e.style.display="none";
+                                                var f= document.getElementById("step6");
+                                                f.style.display="none";
+                                                var g= document.getElementById("step7");
+                                                g.style.display="none";
+                                                var h= document.getElementById("step8");
+                                                h.style.display="none";
+                                                var i= document.getElementById("step9");
+                                                i.style.display="none";
+                                                var j= document.getElementById("secbutt1");
+                                                j.style.display="none";
+                                                var k= document.getElementById("btngr1");
+                                                k.style.display="none";
+                                                var l= document.getElementById("btngr2");
+                                                l.style.display="none";
+                                                var m= document.getElementById("btngr3");
+                                                m.style.display="none";
+                                                var n= document.getElementById("btngr4");
+                                                n.style.display="none";
+                                                var o= document.getElementById("btngr5");
+                                                o.style.display="none";
+                                                var p= document.getElementById("btngr6");
+                                                p.style.display="none";
+                                                var q= document.getElementById("btngr7");
+                                                q.style.display="none";
+                                                var r= document.getElementById("btngr8");
+                                                r.style.display="none";
+                                                var s= document.getElementById("btngr9");
+                                                s.style.display="none";
+                                                var t= document.getElementById("btngrlast");
+                                                t.style.display="none";
+                                                
+                                            }
+                                            </script>
+                                            <script>
+                                                function dropgum(){
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="none";
+                                                var y= document.getElementById("btngr3x");
+                                                y.style.display="none";
+                                                var a= document.getElementById("step1");
+                                                a.style.display="none";
+                                                var b= document.getElementById("step2");
+                                                b.style.display="none";
+                                                var c= document.getElementById("step3");
+                                                c.style.display="none";
+                                                var d= document.getElementById("step4");
+                                                d.style.display="none";
+                                                var e= document.getElementById("step5");
+                                                e.style.display="block";
+                                                var f= document.getElementById("step6");
+                                                f.style.display="none";
+                                                var g= document.getElementById("step7");
+                                                g.style.display="none";
+                                                var h= document.getElementById("step8");
+                                                h.style.display="none";
+                                                var i= document.getElementById("step9");
+                                                i.style.display="none";
+                                                var j= document.getElementById("secbutt1");
+                                                j.style.display="none";
+                                                var k= document.getElementById("btngr1");
+                                                k.style.display="none";
+                                                var l= document.getElementById("btngr2");
+                                                l.style.display="none";
+                                                var m= document.getElementById("btngr3");
+                                                m.style.display="none";
+                                                var n= document.getElementById("btngr4");
+                                                n.style.display="block";
+                                                var o= document.getElementById("btngr5");
+                                                o.style.display="none";
+                                                var p= document.getElementById("btngr6");
+                                                p.style.display="none";
+                                                var q= document.getElementById("btngr7");
+                                                q.style.display="none";
+                                                var r= document.getElementById("btngr8");
+                                                r.style.display="none";
+                                                var s= document.getElementById("btngr9");
+                                                s.style.display="none";
+                                                var t= document.getElementById("btngrlast");
+                                                t.style.display="none";
+                                                
+                                            }
+                                            </script>
+                                            <script>
+                                                function dropteeth(){
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="none";
+                                                var y= document.getElementById("btngr3x");
+                                                y.style.display="none";
+                                                var a= document.getElementById("step1");
+                                                a.style.display="none";
+                                                var b= document.getElementById("step2");
+                                                b.style.display="none";
+                                                var c= document.getElementById("step3");
+                                                c.style.display="none";
+                                                var d= document.getElementById("step4");
+                                                d.style.display="none";
+                                                var e= document.getElementById("step5");
+                                                e.style.display="none";
+                                                var f= document.getElementById("step6");
+                                                f.style.display="block";
+                                                var g= document.getElementById("step7");
+                                                g.style.display="none";
+                                                var h= document.getElementById("step8");
+                                                h.style.display="none";
+                                                var i= document.getElementById("step9");
+                                                i.style.display="none";
+                                                var j= document.getElementById("secbutt1");
+                                                j.style.display="none";
+                                                var k= document.getElementById("btngr1");
+                                                k.style.display="none";
+                                                var l= document.getElementById("btngr2");
+                                                l.style.display="none";
+                                                var m= document.getElementById("btngr3");
+                                                m.style.display="none";
+                                                var n= document.getElementById("btngr4");
+                                                n.style.display="none";
+                                                var o= document.getElementById("btngr5");
+                                                o.style.display="block";
+                                                var p= document.getElementById("btngr6");
+                                                p.style.display="none";
+                                                var q= document.getElementById("btngr7");
+                                                q.style.display="none";
+                                                var r= document.getElementById("btngr8");
+                                                r.style.display="none";
+                                                var s= document.getElementById("btngr9");
+                                                s.style.display="none";
+                                                var t= document.getElementById("btngrlast");
+                                                t.style.display="none";
+                                                
+                                            }
+                                            </script>
+                                            <script>
+                                                function dropemergency(){
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="none";
+                                                var y= document.getElementById("btngr3x");
+                                                y.style.display="none";
+                                                var a= document.getElementById("step1");
+                                                a.style.display="none";
+                                                var b= document.getElementById("step2");
+                                                b.style.display="none";
+                                                var c= document.getElementById("step3");
+                                                c.style.display="none";
+                                                var d= document.getElementById("step4");
+                                                d.style.display="none";
+                                                var e= document.getElementById("step5");
+                                                e.style.display="none";
+                                                var f= document.getElementById("step6");
+                                                f.style.display="none";
+                                                var g= document.getElementById("step7");
+                                                g.style.display="block";
+                                                var h= document.getElementById("step8");
+                                                h.style.display="none";
+                                                var i= document.getElementById("step9");
+                                                i.style.display="none";
+                                                var j= document.getElementById("secbutt1");
+                                                j.style.display="none";
+                                                var k= document.getElementById("btngr1");
+                                                k.style.display="none";
+                                                var l= document.getElementById("btngr2");
+                                                l.style.display="none";
+                                                var m= document.getElementById("btngr3");
+                                                m.style.display="none";
+                                                var n= document.getElementById("btngr4");
+                                                n.style.display="none";
+                                                var o= document.getElementById("btngr5");
+                                                o.style.display="none";
+                                                var p= document.getElementById("btngr6");
+                                                p.style.display="block";
+                                                var q= document.getElementById("btngr7");
+                                                q.style.display="none";
+                                                var r= document.getElementById("btngr8");
+                                                r.style.display="none";
+                                                var s= document.getElementById("btngr9");
+                                                s.style.display="none";
+                                                var t= document.getElementById("btngrlast");
+                                                t.style.display="none";
+                                                
+                                            }
+                                            </script>
+                                            <script>
+                                                function droptreatment(){
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="none";
+                                                var y= document.getElementById("btngr3x");
+                                                y.style.display="none";
+                                                var a= document.getElementById("step1");
+                                                a.style.display="none";
+                                                var b= document.getElementById("step2");
+                                                b.style.display="none";
+                                                var c= document.getElementById("step3");
+                                                c.style.display="none";
+                                                var d= document.getElementById("step4");
+                                                d.style.display="none";
+                                                var e= document.getElementById("step5");
+                                                e.style.display="none";
+                                                var f= document.getElementById("step6");
+                                                f.style.display="none";
+                                                var g= document.getElementById("step7");
+                                                g.style.display="none";
+                                                var h= document.getElementById("step8");
+                                                h.style.display="block";
+                                                var i= document.getElementById("step9");
+                                                i.style.display="none";
+                                                var j= document.getElementById("secbutt1");
+                                                j.style.display="none";
+                                                var k= document.getElementById("btngr1");
+                                                k.style.display="none";
+                                                var l= document.getElementById("btngr2");
+                                                l.style.display="none";
+                                                var m= document.getElementById("btngr3");
+                                                m.style.display="none";
+                                                var n= document.getElementById("btngr4");
+                                                n.style.display="none";
+                                                var o= document.getElementById("btngr5");
+                                                o.style.display="none";
+                                                var p= document.getElementById("btngr6");
+                                                p.style.display="none";
+                                                var q= document.getElementById("btngr7");
+                                                q.style.display="block";
+                                                var r= document.getElementById("btngr8");
+                                                r.style.display="none";
+                                                var s= document.getElementById("btngr9");
+                                                s.style.display="none";
+                                                var t= document.getElementById("btngrlast");
+                                                t.style.display="none";
+                                                
+                                            }
+                                            </script>
+                                            <script>
+                                                function dropdoctor(){
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="none";
+                                                var y= document.getElementById("btngr3x");
+                                                y.style.display="none";
+                                                var a= document.getElementById("step1");
+                                                a.style.display="none";
+                                                var b= document.getElementById("step2");
+                                                b.style.display="none";
+                                                var c= document.getElementById("step3");
+                                                c.style.display="none";
+                                                var d= document.getElementById("step4");
+                                                d.style.display="none";
+                                                var e= document.getElementById("step5");
+                                                e.style.display="none";
+                                                var f= document.getElementById("step6");
+                                                f.style.display="none";
+                                                var g= document.getElementById("step7");
+                                                g.style.display="none";
+                                                var h= document.getElementById("step8");
+                                                h.style.display="none";
+                                                var i= document.getElementById("step9");
+                                                i.style.display="block";
+                                                var j= document.getElementById("secbutt1");
+                                                j.style.display="none";
+                                                var k= document.getElementById("btngr1");
+                                                k.style.display="none";
+                                                var l= document.getElementById("btngr2");
+                                                l.style.display="none";
+                                                var m= document.getElementById("btngr3");
+                                                m.style.display="none";
+                                                var n= document.getElementById("btngr4");
+                                                n.style.display="none";
+                                                var o= document.getElementById("btngr5");
+                                                o.style.display="none";
+                                                var p= document.getElementById("btngr6");
+                                                p.style.display="none";
+                                                var q= document.getElementById("btngr7");
+                                                q.style.display="none";
+                                                var r= document.getElementById("btngr8");
+                                                r.style.display="block";
+                                                var s= document.getElementById("btngr9");
+                                                s.style.display="none";
+                                                var t= document.getElementById("btngrlast");
+                                                t.style.display="none";
+                                                
+                                            }
+                                            </script>
+                                            <script>
+                                                function dropinfo(){
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="none";
+                                                var y= document.getElementById("btngr3x");
+                                                y.style.display="none";
+                                                var a= document.getElementById("step1");
+                                                a.style.display="block";
+                                                var b= document.getElementById("step2");
+                                                b.style.display="none";
+                                                var c= document.getElementById("step3");
+                                                c.style.display="none";
+                                                var d= document.getElementById("step4");
+                                                d.style.display="none";
+                                                var e= document.getElementById("step5");
+                                                e.style.display="none";
+                                                var f= document.getElementById("step6");
+                                                f.style.display="none";
+                                                var g= document.getElementById("step7");
+                                                g.style.display="none";
+                                                var h= document.getElementById("step8");
+                                                h.style.display="none";
+                                                var i= document.getElementById("step9");
+                                                i.style.display="none";
+                                                var j= document.getElementById("secbutt1");
+                                                j.style.display="block";
+                                                var k= document.getElementById("btngr1");
+                                                k.style.display="none";
+                                                var l= document.getElementById("btngr2");
+                                                l.style.display="none";
+                                                var m= document.getElementById("btngr3");
+                                                m.style.display="none";
+                                                var n= document.getElementById("btngr4");
+                                                n.style.display="none";
+                                                var o= document.getElementById("btngr5");
+                                                o.style.display="none";
+                                                var p= document.getElementById("btngr6");
+                                                p.style.display="none";
+                                                var q= document.getElementById("btngr7");
+                                                q.style.display="none";
+                                                var r= document.getElementById("btngr8");
+                                                r.style.display="none";
+                                                var s= document.getElementById("btngr9");
+                                                s.style.display="none";
+                                                var t= document.getElementById("btngrlast");
+                                                t.style.display="none";
+                                                
+                                            }
+                                            </script>
+                                            <script>
+                                                function dropimage1(){
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="none";
+                                                var y= document.getElementById("btngr3x");
+                                                y.style.display="none";
+                                                var a= document.getElementById("step1");
+                                                a.style.display="none";
+                                                var b= document.getElementById("step2");
+                                                b.style.display="block";
+                                                var c= document.getElementById("step3");
+                                                c.style.display="none";
+                                                var d= document.getElementById("step4");
+                                                d.style.display="none";
+                                                var e= document.getElementById("step5");
+                                                e.style.display="none";
+                                                var f= document.getElementById("step6");
+                                                f.style.display="none";
+                                                var g= document.getElementById("step7");
+                                                g.style.display="none";
+                                                var h= document.getElementById("step8");
+                                                h.style.display="none";
+                                                var i= document.getElementById("step9");
+                                                i.style.display="none";
+                                                var j= document.getElementById("secbutt1");
+                                                j.style.display="none";
+                                                var k= document.getElementById("btngr1");
+                                                k.style.display="block";
+                                                var l= document.getElementById("btngr2");
+                                                l.style.display="none";
+                                                var m= document.getElementById("btngr3");
+                                                m.style.display="none";
+                                                var n= document.getElementById("btngr4");
+                                                n.style.display="none";
+                                                var o= document.getElementById("btngr5");
+                                                o.style.display="none";
+                                                var p= document.getElementById("btngr6");
+                                                p.style.display="none";
+                                                var q= document.getElementById("btngr7");
+                                                q.style.display="none";
+                                                var r= document.getElementById("btngr8");
+                                                r.style.display="none";
+                                                var s= document.getElementById("btngr9");
+                                                s.style.display="none";
+                                                var t= document.getElementById("btngrlast");
+                                                t.style.display="none";
+                                                
+                                            }
+                                            </script>
+                                            <script>
+                                                function dropimage2(){
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="none";
+                                                var y= document.getElementById("btngr3x");
+                                                y.style.display="none";
+                                                var a= document.getElementById("step1");
+                                                a.style.display="none";
+                                                var b= document.getElementById("step2");
+                                                b.style.display="none";
+                                                var c= document.getElementById("step3");
+                                                c.style.display="block";
+                                                var d= document.getElementById("step4");
+                                                d.style.display="none";
+                                                var e= document.getElementById("step5");
+                                                e.style.display="none";
+                                                var f= document.getElementById("step6");
+                                                f.style.display="none";
+                                                var g= document.getElementById("step7");
+                                                g.style.display="none";
+                                                var h= document.getElementById("step8");
+                                                h.style.display="none";
+                                                var i= document.getElementById("step9");
+                                                i.style.display="none";
+                                                var j= document.getElementById("secbutt1");
+                                                j.style.display="none";
+                                                var k= document.getElementById("btngr1");
+                                                k.style.display="none";
+                                                var l= document.getElementById("btngr2");
+                                                l.style.display="block";
+                                                var m= document.getElementById("btngr3");
+                                                m.style.display="none";
+                                                var n= document.getElementById("btngr4");
+                                                n.style.display="none";
+                                                var o= document.getElementById("btngr5");
+                                                o.style.display="none";
+                                                var p= document.getElementById("btngr6");
+                                                p.style.display="none";
+                                                var q= document.getElementById("btngr7");
+                                                q.style.display="none";
+                                                var r= document.getElementById("btngr8");
+                                                r.style.display="none";
+                                                var s= document.getElementById("btngr9");
+                                                s.style.display="none";
+                                                var t= document.getElementById("btngrlast");
+                                                t.style.display="none";
+                                                
+                                            }
+                                            </script>
+                                            <script>
+                                                function dropimage3(){
+                                                var x= document.getElementById("step4x");
+                                                x.style.display="none";
+                                                var y= document.getElementById("btngr3x");
+                                                y.style.display="none";
+                                                var a= document.getElementById("step1");
+                                                a.style.display="none";
+                                                var b= document.getElementById("step2");
+                                                b.style.display="none";
+                                                var c= document.getElementById("step3");
+                                                c.style.display="none";
+                                                var d= document.getElementById("step4");
+                                                d.style.display="block";
+                                                var e= document.getElementById("step5");
+                                                e.style.display="none";
+                                                var f= document.getElementById("step6");
+                                                f.style.display="none";
+                                                var g= document.getElementById("step7");
+                                                g.style.display="none";
+                                                var h= document.getElementById("step8");
+                                                h.style.display="none";
+                                                var i= document.getElementById("step9");
+                                                i.style.display="none";
+                                                var j= document.getElementById("secbutt1");
+                                                j.style.display="none";
+                                                var k= document.getElementById("btngr1");
+                                                k.style.display="none";
+                                                var l= document.getElementById("btngr2");
+                                                l.style.display="none";
+                                                var m= document.getElementById("btngr3");
+                                                m.style.display="block";
+                                                var n= document.getElementById("btngr4");
+                                                n.style.display="none";
+                                                var o= document.getElementById("btngr5");
+                                                o.style.display="none";
+                                                var p= document.getElementById("btngr6");
+                                                p.style.display="none";
+                                                var q= document.getElementById("btngr7");
+                                                q.style.display="none";
+                                                var r= document.getElementById("btngr8");
+                                                r.style.display="none";
+                                                var s= document.getElementById("btngr9");
+                                                s.style.display="none";
+                                                var t= document.getElementById("btngrlast");
+                                                t.style.display="none";
+                                                
+                                            }
+                                            </script>
+                                        <button type = "button" class = "btn btn-primary dropdown-toggle rounded-pill shadow" data-toggle = "dropdown">
+                                            Jump to section 
+                                            <span class = "caret"></span>
+                                        </button>
+                                        
+                                        <ul class = "dropdown-menu" role = "menu">
+                                            <li class="p-2"><a onclick="drophistory()" href = "#">History</a></li>
+                                            <li class="p-2"><a onclick="dropgum()" href = "#">Gum health </a></li>
+                                            <li class="p-2"><a onclick="dropteeth()" href = "#">Teeth health </a></li>
+                                            <li class="p-2"><a onclick="dropemergency()" href = "#">Emergency findings </a></li>
+                                            <li class="p-2"><a onclick="droptreatment()" href = "#">Treatment plan </a></li>
+                                            <li class="p-2"><a onclick="dropdoctor()" href = "#">Doctor's details </a></li>
+                                            
+                                            
+                                        </ul>
+                                        
+                                        </div>
+                                        <h6 class=" mt-2 h4 font-weight-bold text-primary">Doctor's Analysis</h6>
+                                        
+
                                     </div>
                                     <div class="card-body" style="height: 420px;overflow-y: scroll;">
                                         <form action="">
@@ -533,7 +1041,18 @@
                                             </div>
                                             <div id="step2">
                                                 <h1 class="h5 mb-3 text-gray-800">Annotate image 1</h1>
-                                                <img src="img/annotate1.jpeg" class="w-100 mb-2" alt="">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <img src="img/annotate1.jpeg" style="height: 360px;width: auto;" class=" mb-2" alt="">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h5>Annotations</h5>
+                                                        <hr>
+                                                        <p>Annotation 1</p>
+                                                        <p>Annotation 2</p>
+                                                        <p>Annotation 3</p>
+                                                    </div>
+                                                </div>
                                                 <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="Update">
                                                 <br>
                                                 <br>
@@ -542,7 +1061,18 @@
                                             </div>
                                             <div id="step3">
                                                 <h1 class="h5 mb-3 text-gray-800">Annotate image 2</h1>
-                                                <img src="img/annotate2.jpeg" class="w-100 mb-2" alt="">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <img src="img/annotate2.jpeg" style="height: 360px;width: auto;" class=" mb-2" alt="">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h5>Annotations</h5>
+                                                        <hr>
+                                                        <p>Annotation 1</p>
+                                                        <p>Annotation 2</p>
+                                                        <p>Annotation 3</p>
+                                                    </div>
+                                                </div>
                                                 <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="Update">
                                                 <br>
                                                 <br>
@@ -551,7 +1081,18 @@
                                             </div>
                                             <div id="step4">
                                                 <h1 class="h5 mb-3 text-gray-800">Annotate image 3</h1>
-                                                <img src="img/annotate3.jpeg" class="w-100 mb-2" alt="">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <img src="img/annotate3.jpeg" style="height: 360px;width: auto;" class=" mb-2" alt="">
+                                                    </div>
+                                                    <div class="col-7">
+                                                        <h5>Annotations</h5>
+                                                        <hr>
+                                                        <p>Annotation 1</p>
+                                                        <p>Annotation 2</p>
+                                                        <p>Annotation 3</p>
+                                                    </div>
+                                                </div>
                                                 <input type="button" id="" onclick="" class="btn btn-primary mx-1 float-right m-0"  value="Update">
                                                 <br>
                                                 <br>
