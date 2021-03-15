@@ -1100,10 +1100,29 @@
                                                 
                                
                                             </div>
+                                            
                                             <div id="step4x">
+                                                <script>
+                                                    function change(value){
+                                                    document.getElementById("medhist").value= value;
+                                                    document.getElementById("nomedbutt").style.display="none";
+                                                    }
+                                                </script>
+                                                <script>
+                                                    function change2(value){
+                                                    document.getElementById("denthist").value= value;
+                                                    document.getElementById("nodenbutt").style.display="none";
+                                                    }
+                                                </script>
                                                 <h1 class="h5 mb-3 text-gray-800">History</h1>
+
+                                                <div class="row p-0 m-0 my-4">
+                                                    <input id="nomedbutt" type="button" class="btn btn-dark mr-2" onclick="change('No medical history')" value="No medical history">
+                                                    <input id="nodenbutt" type="button" class="btn btn-secondary mr-2" onclick="change2('No dental history')" value="No Dental history">
+                                                    
+                                                </div>
                                                 <div class="input-group mb-2">
-                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Medical History"
+                                                    <textarea id="medhist" type="text"  class="form-control bg-light border-0 small" placeholder="Medical History"
                                                         aria-label="Search" aria-describedby="basic-addon2"></textarea>
                                                     <!-- <div class="input-group-append">
                                                         <button class="btn btn-white text-success" type="button">
@@ -1112,7 +1131,7 @@
                                                     </div> -->
                                                 </div>
                                                 <div class="input-group mb-2">
-                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Dental History"
+                                                    <textarea id="denthist" type="text" class="form-control bg-light border-0 small" placeholder="Dental History"
                                                         aria-label="Search" aria-describedby="basic-addon2"></textarea>
                                                     <!-- <div class="input-group-append">
                                                         <button class="btn btn-white text-success" type="button">
@@ -1348,12 +1367,29 @@
                                             </div>
                                             <div id="step9">
                                                 
+                                                    <script>
+                                                        function change3(value){
+                                                        document.getElementById("docname").value= value;
+                                                        document.getElementById("docnamebutt").style.display="none";
+                                                        }
+                                                    </script>
+                                                    <script>
+                                                        function change4(value){
+                                                        document.getElementById("docid").value= value;
+                                                        document.getElementById("docidbutt").style.display="none";
+                                                        }
+                                                    </script>
                                                 <h1 class="h5 mb-3 text-gray-800">Doctor details</h1>
+                                                <div class="row p-0 m-0 my-4">
+                                                    <input id="docnamebutt" type="button" class="btn btn-dark mr-2" onclick="change3('Dr. Nivedita Tiwari')" value="Dr. Nivedita Tiwari">
+                                                    <input id="docidbutt" type="button" class="btn btn-secondary mr-2" onclick="change4('000001')" value="000001">
+                                                    
+                                                </div>
                                                 <div class="row">
                                                         <div class="col-8">
     
                                                             <div class="input-group mb-2">
-                                                                <input type="text" class="form-control bg-light border-0 small" placeholder="Doctor name"
+                                                                <input id="docname" type="text" class="form-control bg-light border-0 small" placeholder="Doctor name"
                                                                     aria-label="Search" aria-describedby="basic-addon2">
                                                                 <!-- <div class="input-group-append">
                                                                     <button class="btn btn-white text-success" type="button">
@@ -1365,7 +1401,7 @@
                                                         <div class="col-4">
     
                                                             <div class="input-group mb-2">
-                                                                <input type="text" class="form-control bg-light border-0 small" placeholder="Registration ID"
+                                                                <input id="docid" type="text" class="form-control bg-light border-0 small" placeholder="Registration ID"
                                                                     aria-label="Search" aria-describedby="basic-addon2">
                                                                 <!-- <div class="input-group-append">
                                                                     <button class="btn btn-white text-success" type="button">
@@ -1645,6 +1681,8 @@
                                             c.style.display="block";
                                             var d= document.getElementById("step7");
                                             d.style.display="block";
+                                            var g= document.getElementById("step4x");
+                                            g.style.display="block";
                                             
                                             
                                               
@@ -1656,47 +1694,47 @@
                                     </script>
                                     <div class="card-header bg-white py-3 shadow">
                                         <div>
-                                            <input type="button" id="secbutt1" onclick="myFunction()" class="btn btn-primary mx-1 float-right m-0"  value="next 1">
+                                            <input type="button" id="secbutt1" onclick="myFunction()" class="btn btn-primary mx-1 float-right m-0"  value="next">
                                         </div>
                                         <div id="btngr1">
-                                            <input type="button" id="secbutt2" onclick="myFunction2()" class="btn btn-primary mx-1 float-right m-0"  value="next 2">
-                                            <input type="button" id="secbutt2a" onclick="myFunction2a()" class="btn btn-light mx-1 float-right m-0"  value="previous 2"> 
+                                            <input type="button" id="secbutt2" onclick="myFunction2()" class="btn btn-primary mx-1 float-right m-0"  value="next">
+                                            <input type="button" id="secbutt2a" onclick="myFunction2a()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
                                         </div>
                                         <div id="btngr2">
-                                            <input type="button" id="secbutt3" onclick="myFunction3()" class="btn btn-primary mx-1 float-right m-0"  value="next 3">
-                                            <input type="button" id="secbutt3a" onclick="myFunction3a()" class="btn btn-light mx-1 float-right m-0"  value="previous 3"> 
+                                            <input type="button" id="secbutt3" onclick="myFunction3()" class="btn btn-primary mx-1 float-right m-0"  value="next">
+                                            <input type="button" id="secbutt3a" onclick="myFunction3a()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
                                         </div>
                                         <div id="btngr3">
-                                            <input type="button" id="secbutt4" onclick="myFunction4()" class="btn btn-primary mx-1 float-right m-0"  value="next 4">
-                                            <input type="button" id="secbutt4a" onclick="myFunction4a()" class="btn btn-light mx-1 float-right m-0"  value="previous 4"> 
+                                            <input type="button" id="secbutt4" onclick="myFunction4()" class="btn btn-primary mx-1 float-right m-0"  value="next">
+                                            <input type="button" id="secbutt4a" onclick="myFunction4a()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
                                         </div>
                                         <div id="btngr3x">
-                                            <input type="button" id="secbutt4" onclick="myFunction4x()" class="btn btn-primary mx-1 float-right m-0"  value="next 4x">
-                                            <input type="button" id="secbutt4a" onclick="myFunction4xa()" class="btn btn-light mx-1 float-right m-0"  value="previous 4x"> 
+                                            <input type="button" id="secbutt4" onclick="myFunction4x()" class="btn btn-primary mx-1 float-right m-0"  value="next">
+                                            <input type="button" id="secbutt4a" onclick="myFunction4xa()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
                                         </div>
                                         <div id="btngr4">
-                                            <input type="button" id="secbutt5" onclick="myFunction5()" class="btn btn-primary mx-1 float-right m-0"  value="next 5">
-                                            <input type="button" id="secbutt5a" onclick="myFunction5a()" class="btn btn-light mx-1 float-right m-0"  value="previous 5"> 
+                                            <input type="button" id="secbutt5" onclick="myFunction5()" class="btn btn-primary mx-1 float-right m-0"  value="next">
+                                            <input type="button" id="secbutt5a" onclick="myFunction5a()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
                                         </div>
                                         <div id="btngr5">
-                                            <input type="button" id="secbutt6" onclick="myFunction6()" class="btn btn-primary mx-1 float-right m-0"  value="next 6">
-                                            <input type="button" id="secbutt6a" onclick="myFunction6a()()" class="btn btn-light mx-1 float-right m-0"  value="previous 6"> 
+                                            <input type="button" id="secbutt6" onclick="myFunction6()" class="btn btn-primary mx-1 float-right m-0"  value="next">
+                                            <input type="button" id="secbutt6a" onclick="myFunction6a()()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
                                         </div>
                                         <div id="btngr6">
-                                            <input type="button" id="secbuttlast" onclick="myFunction7()" class="btn btn-primary mx-1 float-right m-0"  value="next 7">
-                                            <input type="button" id="secbuttlasta" onclick="myFunction7a()()" class="btn btn-light mx-1 float-right m-0"  value="previous 7"> 
+                                            <input type="button" id="secbuttlast" onclick="myFunction7()" class="btn btn-primary mx-1 float-right m-0"  value="next">
+                                            <input type="button" id="secbuttlasta" onclick="myFunction7a()()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
                                         </div>
                                         <div id="btngr7">
-                                            <input type="button" id="secbuttlast" onclick="myFunction8()" class="btn btn-primary mx-1 float-right m-0"  value="next 8">
-                                            <input type="button" id="secbuttlasta" onclick="myFunction8a()()" class="btn btn-light mx-1 float-right m-0"  value="previous 8"> 
+                                            <input type="button" id="secbuttlast" onclick="myFunction8()" class="btn btn-primary mx-1 float-right m-0"  value="next">
+                                            <input type="button" id="secbuttlasta" onclick="myFunction8a()()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
                                         </div>
                                         <div id="btngr8">
                                             <input type="button" id="secbuttlast" onclick="myFunction9()" class="btn btn-primary mx-1 float-right m-0"  value="preview">
-                                            <input type="button" id="secbuttlasta" onclick="myFunction9a()()" class="btn btn-light mx-1 float-right m-0"  value="previous 9"> 
+                                            <input type="button" id="secbuttlasta" onclick="myFunction9a()()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
                                         </div>
                                         <div id="btngr9">
-                                            <input type="button" id="secbuttlast" onclick="myFunctionlast()" class="btn btn-primary mx-1 float-right m-0"  value="next 10">
-                                            <input type="button" id="secbuttlasta" onclick="myFunctionlasta()()" class="btn btn-light mx-1 float-right m-0"  value="previous 10"> 
+                                            <input type="button" id="secbuttlast" onclick="myFunctionlast()" class="btn btn-primary mx-1 float-right m-0"  value="next">
+                                            <input type="button" id="secbuttlasta" onclick="myFunctionlasta()()" class="btn btn-light mx-1 float-right m-0"  value="previous"> 
                                         </div>
                                         <div id="btngrlast">
 <div>
