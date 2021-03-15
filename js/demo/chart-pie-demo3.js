@@ -7,11 +7,10 @@ var ctx = document.getElementById("myPieChart3");
 var myPieChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-        labels: ["Direct", "Referral", "Social"],
+        labels: ["CITY 1", "CITY 2", "CITY 3", "CITY 4", "CITY 5", "CITY 6"],
         datasets: [{
-            data: [55, 30, 15],
-            backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
-            hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
+            data: [15, 30, 15, 30, 5, 5],
+            backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc', '#5a5c69', '#e74a3b', '#f6c23e'],
             hoverBorderColor: "rgba(234, 236, 244, 1)",
         }],
     },
