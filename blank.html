@@ -1307,10 +1307,19 @@
                                                 
                                             </div>
                                             <div id="step7">
-                                                
+                                                <script>
+                                                    function change5(value){
+                                                    document.getElementById("emergency_findings").value= value;
+                                                    document.getElementById("emergency_findings_butt").style.display="none";
+                                                    }
+                                                </script>
                                                 <h1 class="h5 mb-3 text-gray-800">Emergency findings</h1>
+                                                <div class="row p-0 m-0 my-4">
+                                                    <input id="emergency_findings_butt" type="button" class="btn btn-dark mr-2" onclick="change5('No emergency findings')" value="No emergency findings">
+                                                    
+                                                </div>
                                                 <div class="input-group mb-2">
-                                                    <textarea type="text" class="form-control bg-light border-0 small" placeholder="Emergency findings"
+                                                    <textarea id="emergency_findings" type="text" class="form-control bg-light border-0 small" placeholder="Emergency findings"
                                                         aria-label="Search" aria-describedby="basic-addon2"></textarea>
                                                     <!-- <div class="input-group-append">
                                                         <button class="btn btn-white text-success" type="button">
