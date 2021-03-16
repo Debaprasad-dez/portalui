@@ -1346,19 +1346,27 @@
                                                                 </div> -->
                                                             </div>
                                                         </div>
+                                                        <style>
+                                                            input[type="checkbox"] {
+                                                            display: none;
+                                                            }
+                                                            input[type="checkbox"]:checked + label {
+                                                            color: #ffffff;
+                                                            background: #5a5c69;
+                                                            box-shadow: none !important;
+                                                            }
+                                                            </style>
                                                         <div class="col-4 p-1">
                                                             
                                                             <p class="small m-0 mb-1 pl-2">Preventive care</p>
-                                                            <div class="input-group mb-2">
-                                                                <textarea id="precaution" type="text" class="form-control bg-light border-0 small" placeholder="Preventive measures"
-                                                                    aria-label="Search" aria-describedby="basic-addon2"></textarea>
-                                                                <!-- <div class="input-group-append">
-                                                                    <button class="btn btn-white text-success" type="button">
-                                                                        <i class="fas fa-check fa-sm mr-2"></i> Dental history
-                                                                    </button>
-                                                                </div> -->
-                                                                
+                                                            <div class=" row m-2">
+                                                                <input id="bike" type="checkbox" name="vehicle" value="Bike"><label class="btn btn-white shadow-sm mr-3" for="bike"><small>Use a soft bristle brush</small></label><br>
+                                                                <input id="car" type="checkbox" name="vehicle" value="Car"><label class="btn btn-white shadow-sm mr-3" for="car"><small>Brush softly in circular motion</small></label><br>
+                                                                <input id="rollerblades" type="checkbox" name="vehicle" value="Rollerblades"><label class="btn btn-white shadow-sm mr-3" for="rollerblades"><small>Direction of brushing should be from gums to tooth</small></label>
+                                                                <input id="donut" type="checkbox" name="food" value="Donut"><label class="btn btn-white shadow-sm mr-3" for="donut"><small>Use a non-alcohol based mouthwash 3-4 times weekly</small></label><br>
+                                                            
                                                             </div>
+
                                                         </div>
                                                         <div class="col-4 p-1">
                                                             <p class="small m-0 mb-1 pl-2">Patient referral</p>
@@ -1692,6 +1700,8 @@
                                             c.style.display="block";
                                             var d= document.getElementById("step7");
                                             d.style.display="block";
+                                            var h= document.getElementById("step8");
+                                            h.style.display="block";
                                             var g= document.getElementById("step4x");
                                             g.style.display="block";
                                             
